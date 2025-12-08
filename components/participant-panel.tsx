@@ -71,12 +71,12 @@ export default function ParticipantPanel({
           value={newName}
           onChange={(e) => setNewName(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleAddClick()}
-          className="flex-1 bg-gray-50 border-gray-300 text-gray-900 placeholder-gray-400 text-sm h-9"
+          className="flex-1 bg-gray-50 border-gray-300 text-gray-900 placeholder-gray-400 text-sm h-9 cursor-pointer"
         />
         <Button
           onClick={handleAddClick}
           size="icon"
-          className="bg-blue-600 hover:bg-blue-700 text-white flex-shrink-0 h-9 w-9"
+          className="bg-blue-600 hover:bg-blue-700 text-white flex-shrink-0 h-9 w-9 cursor-pointer"
         >
           <Plus className="w-4 h-4" />
         </Button>
@@ -88,7 +88,7 @@ export default function ParticipantPanel({
           placeholder="Search..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="bg-gray-50 border-gray-300 text-gray-900 placeholder-gray-400 pl-10 text-sm h-9"
+          className="bg-gray-50 border-gray-300 text-gray-900 placeholder-gray-400 pl-10 text-sm h-9 cursor-pointer"
         />
       </div>
 
@@ -104,7 +104,7 @@ export default function ParticipantPanel({
             return (
               <div
                 key={participant}
-                className={`flex items-center justify-between p-2 rounded-lg transition-colors ${
+                className={`flex items-center justify-between p-2 rounded-lg transition-colors cursor-pointer ${
                   prize ? "bg-green-50 hover:bg-green-100" : "bg-gray-50 hover:bg-gray-100"
                 }`}
               >
@@ -116,7 +116,7 @@ export default function ParticipantPanel({
                 </div>
                 <button
                   onClick={() => onDeleteParticipant(participant)}
-                  className="text-red-500 hover:text-red-600 transition-colors flex-shrink-0 ml-2"
+                  className="text-red-500 hover:text-red-600 transition-colors flex-shrink-0 ml-2 cursor-pointer"
                 >
                   <Trash2 className="w-3.5 h-3.5" />
                 </button>

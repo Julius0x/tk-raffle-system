@@ -1,0 +1,1315 @@
+[00:00:02.127] Server  LOG     
+[00:00:02.127] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:02.128] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:02.129] Server  LOG        	- include was updated to add '.next/dev/types/**/*.ts'
+[00:00:02.129] Server  LOG     
+[00:00:02.130] Server  LOG        The following mandatory changes were made to your tsconfig.json:
+
+[00:00:02.130] Server  LOG        	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+[00:00:02.130] Server  LOG     
+[00:00:02.442] Server  LOG      ✓ Ready in 1845ms
+[00:00:09.255] Server  LOG     [v0] Toaster rendering with toasts: 0
+[00:00:09.556] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:09.837] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:00:09.837] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:00:10.490] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:10.490] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:10.490] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765215829462}
+[00:00:38.128] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:00:38.128] Browser LOG     [v0] Toast state updated: 1
+[00:00:38.128] Browser LOG     [v0] Toast state updated: 1
+[00:00:38.128] Browser LOG     [v0] Toast state updated: 1
+[00:00:38.128] Browser LOG     [v0] Toast state updated: 1
+[00:00:38.128] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:00:38.128] Browser LOG     [v0] Rendering toast: 1 ❌ Error
+[00:00:38.128] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:00:38.128] Browser LOG     [v0] Rendering toast: 1 ❌ Error
+[00:00:44.431] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:00:44.431] Browser LOG     [v0] Toast state updated: 1
+[00:00:44.431] Browser LOG     [v0] Toast state updated: 1
+[00:00:44.431] Browser LOG     [v0] Toast state updated: 1
+[00:00:44.431] Browser LOG     [v0] Toast state updated: 1
+[00:00:44.431] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:00:44.431] Browser LOG     [v0] Rendering toast: 1 ❌ Error
+[00:00:44.431] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:00:44.431] Browser LOG     [v0] Rendering toast: 1 ❌ Error
+[00:00:50.176] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:00:50.176] Browser LOG     [v0] Toast state updated: 1
+[00:00:50.176] Browser LOG     [v0] Toast state updated: 1
+[00:00:50.176] Browser LOG     [v0] Toast state updated: 1
+[00:00:50.176] Browser LOG     [v0] Toast state updated: 1
+[00:00:50.176] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:00:50.176] Browser LOG     [v0] Rendering toast: 2 🗑️ Removed
+[00:00:50.176] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:00:50.176] Browser LOG     [v0] Rendering toast: 2 🗑️ Removed
+[00:01:17.829] Server  LOG      ✓ Compiled in 118ms
+[00:01:27.107] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:01:27.107] Browser LOG     [v0] Toast state updated: 1
+[00:01:27.107] Browser LOG     [v0] Toast state updated: 1
+[00:01:27.107] Browser LOG     [v0] Toast state updated: 1
+[00:01:27.107] Browser LOG     [v0] Toast state updated: 1
+[00:01:27.107] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:01:27.107] Browser LOG     [v0] Rendering toast: 2 🗑️ Removed
+[00:01:27.107] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:01:27.107] Browser LOG     [v0] Rendering toast: 2 🗑️ Removed
+[00:01:49.765] Server  LOG      ✓ Compiled in 57ms
+[00:01:55.505] Server  LOG      ✓ Compiled in 56ms
+[00:02:51.477] Server  LOG      ✓ Compiled in 57ms
+[00:02:59.368] Server  LOG      ✓ Compiled in 146ms
+[00:03:30.845] Server  LOG      ✓ Compiled in 54ms
+[00:03:42.244] Server  LOG      ✓ Compiled in 43ms
+[00:03:49.485] Server  LOG      ✓ Compiled in 69ms
+[00:04:15.110] Server  LOG      ✓ Compiled in 61ms
+[00:04:18.913] Server  LOG      ✓ Compiled in 55ms
+[00:04:43.689] Server  LOG      ✓ Compiled in 44ms
+[00:04:49.696] Server  LOG      ✓ Compiled in 42ms
+[00:06:22.912] Server  LOG      ✓ Compiled in 48ms
+[00:06:24.190] Server  LOG      ✓ Compiled in 65ms
+[00:06:57.712] Server  LOG      ✓ Compiled in 59ms
+[00:06:58.088] Browser ERROR   ./app/page.tsx:138:7
+Parsing ecmascript source code failed
+  136 |         backgroundAttachment: "fixed",
+  137 |         backgroundRepeat: "no-repeat".
+> 138 |       }}
+      |       ^
+  139 |     >
+  140 |       <div
+  141 |         className="  flex flex-col px-8 pb-8 pt-12  border-2 border-black"
+
+Expected ident
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:59.756] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:06:59.756] Browser LOG     [v0] Rendering toast: 2 🗑️ Removed
+[00:06:59.756] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:06:59.756] Browser LOG     [v0] Rendering toast: 2 🗑️ Removed
+[00:09:42.982] Server  LOG      ✓ Compiled in 58ms
+[00:11:35.472] Server  LOG      ✓ Compiled in 42ms
+[00:12:09.349] Server  LOG      ✓ Compiled in 58ms
+[00:12:13.585] Server  LOG      ✓ Compiled in 363ms
+[00:12:17.042] Server  LOG      ✓ Compiled in 97ms
+[00:12:28.287] Server  LOG      ✓ Compiled in 74ms
+[00:12:58.599] Server  LOG      ✓ Compiled in 39ms
+[00:13:01.035] Server  LOG      ✓ Compiled in 37ms
+[00:13:08.274] Server  LOG      ✓ Compiled in 68ms
+[00:13:14.649] Server  LOG      ✓ Compiled in 62ms
+[00:14:18.935] Server  LOG      ✓ Compiled in 85ms
+[00:14:19.008] Browser ERROR   ./app/page.tsx:140:9
+Parsing ecmascript source code failed
+  138 |     >
+  139 |       <div
+> 140 |         <div className="grid grid-cols-[1fr_1.6fr_1fr] gap-5 flex-1 min-h-0">
+      |         ^
+  141 |         style={{
+  142 |           aspectRatio: "896/640",
+  143 |           width: "min(calc(100vh * 896 / 640), 100vw)",
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:14:55.098] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:14:55.098] Browser LOG     [v0] Rendering toast: 2 🗑️ Removed
+[00:14:55.098] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:14:55.098] Browser LOG     [v0] Rendering toast: 2 🗑️ Removed
+[00:15:19.907] Server  LOG      ✓ Compiled in 110ms
+[00:16:08.538] Server  LOG      ✓ Compiled in 44ms
+[00:16:13.710] Server  LOG      ✓ Compiled in 43ms
+[00:16:24.554] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:16:24.554] Browser LOG     [v0] Toast state updated: 1
+[00:16:24.554] Browser LOG     [v0] Toast state updated: 1
+[00:16:24.555] Browser LOG     [v0] Toast state updated: 1
+[00:16:24.555] Browser LOG     [v0] Toast state updated: 1
+[00:16:24.555] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:16:24.555] Browser LOG     [v0] Toast state updated: 1
+[00:16:24.555] Browser LOG     [v0] Toast state updated: 1
+[00:16:24.555] Browser LOG     [v0] Toast state updated: 1
+[00:16:24.555] Browser LOG     [v0] Toast state updated: 1
+[00:16:24.555] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:16:24.555] Browser LOG     [v0] Rendering toast: 4 🏆 MIRELLES ROCHELLE Won!
+[00:16:24.555] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:16:24.555] Browser LOG     [v0] Rendering toast: 4 🏆 MIRELLES ROCHELLE Won!
+[00:16:29.709] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:16:29.710] Browser LOG     [v0] Toast state updated: 1
+[00:16:29.710] Browser LOG     [v0] Toast state updated: 1
+[00:16:29.710] Browser LOG     [v0] Toast state updated: 1
+[00:16:29.710] Browser LOG     [v0] Toast state updated: 1
+[00:16:29.710] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:16:29.710] Browser LOG     [v0] Rendering toast: 4 🏆 MIRELLES ROCHELLE Won!
+[00:16:29.710] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:16:29.710] Browser LOG     [v0] Rendering toast: 4 🏆 MIRELLES ROCHELLE Won!
+[00:17:21.391] Server  LOG      ✓ Compiled in 60ms
+[00:17:24.432] Browser LOG     [v0] Toast dispatched: REMOVE_TOAST 1
+[00:17:24.432] Browser LOG     [v0] Toast state updated: 1
+[00:17:24.432] Browser LOG     [v0] Toast state updated: 1
+[00:17:24.432] Browser LOG     [v0] Toast state updated: 1
+[00:17:24.432] Browser LOG     [v0] Toast state updated: 1
+[00:17:24.432] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:17:24.432] Browser LOG     [v0] Rendering toast: 4 🏆 MIRELLES ROCHELLE Won!
+[00:17:24.432] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:17:24.432] Browser LOG     [v0] Rendering toast: 4 🏆 MIRELLES ROCHELLE Won!
+[00:17:38.636] Server  LOG     [v0] Toaster rendering with toasts: 0
+[00:17:38.960] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:39.239] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:17:39.239] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:17:39.347] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:17:39.347] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:17:39.347] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765216878328}
+[00:17:44.685] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:17:44.685] Browser LOG     [v0] Toast state updated: 1
+[00:17:44.685] Browser LOG     [v0] Toast state updated: 1
+[00:17:44.685] Browser LOG     [v0] Toast state updated: 1
+[00:17:44.685] Browser LOG     [v0] Toast state updated: 1
+[00:17:44.685] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:17:44.685] Browser LOG     [v0] Toast state updated: 1
+[00:17:44.685] Browser LOG     [v0] Toast state updated: 1
+[00:17:44.685] Browser LOG     [v0] Toast state updated: 1
+[00:17:44.685] Browser LOG     [v0] Toast state updated: 1
+[00:17:44.685] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:17:44.685] Browser LOG     [v0] Rendering toast: 2 🏆 AMOLATO LOIDA Won!
+[00:17:44.685] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:17:44.685] Browser LOG     [v0] Rendering toast: 2 🏆 AMOLATO LOIDA Won!
+[00:17:49.822] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:17:49.822] Browser LOG     [v0] Toast state updated: 1
+[00:17:49.822] Browser LOG     [v0] Toast state updated: 1
+[00:17:49.822] Browser LOG     [v0] Toast state updated: 1
+[00:17:49.822] Browser LOG     [v0] Toast state updated: 1
+[00:17:49.822] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:17:49.822] Browser LOG     [v0] Rendering toast: 2 🏆 AMOLATO LOIDA Won!
+[00:17:49.822] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:17:49.822] Browser LOG     [v0] Rendering toast: 2 🏆 AMOLATO LOIDA Won!
+[00:18:37.752] Server  LOG      ✓ Compiled in 71ms
+[00:18:53.570] Server  LOG      ✓ Compiled in 42ms
+[00:19:13.055] Server  LOG      ✓ Compiled in 39ms
+[00:19:22.225] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:19:22.225] Browser LOG     [v0] Toast state updated: 1
+[00:19:22.225] Browser LOG     [v0] Toast state updated: 1
+[00:19:22.225] Browser LOG     [v0] Toast state updated: 1
+[00:19:22.225] Browser LOG     [v0] Toast state updated: 1
+[00:19:22.225] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:22.225] Browser LOG     [v0] Rendering toast: 3 ✅ Success
+[00:19:22.225] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:22.225] Browser LOG     [v0] Rendering toast: 3 ✅ Success
+[00:19:24.080] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:19:24.080] Browser LOG     [v0] Toast state updated: 1
+[00:19:24.080] Browser LOG     [v0] Toast state updated: 1
+[00:19:24.080] Browser LOG     [v0] Toast state updated: 1
+[00:19:24.080] Browser LOG     [v0] Toast state updated: 1
+[00:19:24.080] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:24.080] Browser LOG     [v0] Rendering toast: 4 ❌ Error
+[00:19:24.080] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:24.080] Browser LOG     [v0] Rendering toast: 4 ❌ Error
+[00:19:27.435] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:19:27.435] Browser LOG     [v0] Toast state updated: 1
+[00:19:27.435] Browser LOG     [v0] Toast state updated: 1
+[00:19:27.435] Browser LOG     [v0] Toast state updated: 1
+[00:19:27.435] Browser LOG     [v0] Toast state updated: 1
+[00:19:27.435] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:27.435] Browser LOG     [v0] Rendering toast: 5 ❌ Error
+[00:19:27.435] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:27.435] Browser LOG     [v0] Rendering toast: 5 ❌ Error
+[00:19:27.717] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:19:27.717] Browser LOG     [v0] Toast state updated: 1
+[00:19:27.717] Browser LOG     [v0] Toast state updated: 1
+[00:19:27.717] Browser LOG     [v0] Toast state updated: 1
+[00:19:27.717] Browser LOG     [v0] Toast state updated: 1
+[00:19:27.717] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:27.717] Browser LOG     [v0] Rendering toast: 5 ❌ Error
+[00:19:27.717] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:27.717] Browser LOG     [v0] Rendering toast: 5 ❌ Error
+[00:19:29.121] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:19:29.121] Browser LOG     [v0] Toast state updated: 1
+[00:19:29.121] Browser LOG     [v0] Toast state updated: 1
+[00:19:29.121] Browser LOG     [v0] Toast state updated: 1
+[00:19:29.121] Browser LOG     [v0] Toast state updated: 1
+[00:19:29.121] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:29.121] Browser LOG     [v0] Rendering toast: 6 ❌ Duplicate Name
+[00:19:29.121] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:29.121] Browser LOG     [v0] Rendering toast: 6 ❌ Duplicate Name
+[00:19:29.121] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:19:29.121] Browser LOG     [v0] Toast state updated: 1
+[00:19:29.121] Browser LOG     [v0] Toast state updated: 1
+[00:19:29.121] Browser LOG     [v0] Toast state updated: 1
+[00:19:29.121] Browser LOG     [v0] Toast state updated: 1
+[00:19:29.121] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:29.121] Browser LOG     [v0] Rendering toast: 6 ❌ Duplicate Name
+[00:19:29.121] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:29.121] Browser LOG     [v0] Rendering toast: 6 ❌ Duplicate Name
+[00:19:32.457] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:19:32.457] Browser LOG     [v0] Toast state updated: 1
+[00:19:32.457] Browser LOG     [v0] Toast state updated: 1
+[00:19:32.457] Browser LOG     [v0] Toast state updated: 1
+[00:19:32.457] Browser LOG     [v0] Toast state updated: 1
+[00:19:32.458] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:32.458] Browser LOG     [v0] Rendering toast: 6 ❌ Duplicate Name
+[00:19:32.458] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:32.458] Browser LOG     [v0] Rendering toast: 6 ❌ Duplicate Name
+[00:19:34.105] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:19:34.105] Browser LOG     [v0] Toast state updated: 1
+[00:19:34.105] Browser LOG     [v0] Toast state updated: 1
+[00:19:34.105] Browser LOG     [v0] Toast state updated: 1
+[00:19:34.105] Browser LOG     [v0] Toast state updated: 1
+[00:19:34.105] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:34.105] Browser LOG     [v0] Rendering toast: 6 ❌ Duplicate Name
+[00:19:34.105] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:19:34.105] Browser LOG     [v0] Rendering toast: 6 ❌ Duplicate Name
+[00:21:00.423] Server  LOG      ✓ Compiled in 102ms
+[00:21:37.181] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:21:37.181] Browser LOG     [v0] Toast state updated: 1
+[00:21:37.181] Browser LOG     [v0] Toast state updated: 1
+[00:21:37.181] Browser LOG     [v0] Toast state updated: 1
+[00:21:37.181] Browser LOG     [v0] Toast state updated: 1
+[00:21:37.181] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:21:37.181] Browser LOG     [v0] Toast state updated: 1
+[00:21:37.181] Browser LOG     [v0] Toast state updated: 1
+[00:21:37.181] Browser LOG     [v0] Toast state updated: 1
+[00:21:37.181] Browser LOG     [v0] Toast state updated: 1
+[00:21:37.181] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:37.181] Browser LOG     [v0] Rendering toast: 8 🏆 GADIL EDELYN Won!
+[00:21:37.181] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:37.181] Browser LOG     [v0] Rendering toast: 8 🏆 GADIL EDELYN Won!
+[00:21:42.189] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:21:42.189] Browser LOG     [v0] Toast state updated: 1
+[00:21:42.189] Browser LOG     [v0] Toast state updated: 1
+[00:21:42.189] Browser LOG     [v0] Toast state updated: 1
+[00:21:42.189] Browser LOG     [v0] Toast state updated: 1
+[00:21:42.189] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:42.189] Browser LOG     [v0] Rendering toast: 8 🏆 GADIL EDELYN Won!
+[00:21:42.189] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:42.189] Browser LOG     [v0] Rendering toast: 8 🏆 GADIL EDELYN Won!
+[00:21:42.387] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:21:42.387] Browser LOG     [v0] Toast state updated: 1
+[00:21:42.387] Browser LOG     [v0] Toast state updated: 1
+[00:21:42.387] Browser LOG     [v0] Toast state updated: 1
+[00:21:42.387] Browser LOG     [v0] Toast state updated: 1
+[00:21:42.387] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:21:42.387] Browser LOG     [v0] Toast state updated: 1
+[00:21:42.388] Browser LOG     [v0] Toast state updated: 1
+[00:21:42.388] Browser LOG     [v0] Toast state updated: 1
+[00:21:42.388] Browser LOG     [v0] Toast state updated: 1
+[00:21:42.388] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:42.388] Browser LOG     [v0] Rendering toast: 10 🏆 BUNYI MARY GRACE Won!
+[00:21:42.388] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:42.388] Browser LOG     [v0] Rendering toast: 10 🏆 BUNYI MARY GRACE Won!
+[00:21:44.267] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:21:44.267] Browser LOG     [v0] Toast state updated: 1
+[00:21:44.268] Browser LOG     [v0] Toast state updated: 1
+[00:21:44.268] Browser LOG     [v0] Toast state updated: 1
+[00:21:44.268] Browser LOG     [v0] Toast state updated: 1
+[00:21:44.268] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:21:44.268] Browser LOG     [v0] Toast state updated: 1
+[00:21:44.268] Browser LOG     [v0] Toast state updated: 1
+[00:21:44.268] Browser LOG     [v0] Toast state updated: 1
+[00:21:44.268] Browser LOG     [v0] Toast state updated: 1
+[00:21:44.268] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:44.268] Browser LOG     [v0] Rendering toast: 12 🏆 BAGASBAS FRANKLIN Won!
+[00:21:44.268] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:44.268] Browser LOG     [v0] Rendering toast: 12 🏆 BAGASBAS FRANKLIN Won!
+[00:21:46.731] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:21:46.731] Browser LOG     [v0] Toast state updated: 1
+[00:21:46.731] Browser LOG     [v0] Toast state updated: 1
+[00:21:46.731] Browser LOG     [v0] Toast state updated: 1
+[00:21:46.731] Browser LOG     [v0] Toast state updated: 1
+[00:21:46.731] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:21:46.731] Browser LOG     [v0] Toast state updated: 1
+[00:21:46.731] Browser LOG     [v0] Toast state updated: 1
+[00:21:46.731] Browser LOG     [v0] Toast state updated: 1
+[00:21:46.731] Browser LOG     [v0] Toast state updated: 1
+[00:21:46.731] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:46.731] Browser LOG     [v0] Rendering toast: 14 🏆 CALDEO ERLYN Won!
+[00:21:46.731] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:46.731] Browser LOG     [v0] Rendering toast: 14 🏆 CALDEO ERLYN Won!
+[00:21:47.400] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:21:47.400] Browser LOG     [v0] Toast state updated: 1
+[00:21:47.401] Browser LOG     [v0] Toast state updated: 1
+[00:21:47.401] Browser LOG     [v0] Toast state updated: 1
+[00:21:47.401] Browser LOG     [v0] Toast state updated: 1
+[00:21:47.401] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:47.401] Browser LOG     [v0] Rendering toast: 14 🏆 CALDEO ERLYN Won!
+[00:21:47.401] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:47.401] Browser LOG     [v0] Rendering toast: 14 🏆 CALDEO ERLYN Won!
+[00:21:49.174] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:21:49.174] Browser LOG     [v0] Toast state updated: 1
+[00:21:49.174] Browser LOG     [v0] Toast state updated: 1
+[00:21:49.174] Browser LOG     [v0] Toast state updated: 1
+[00:21:49.174] Browser LOG     [v0] Toast state updated: 1
+[00:21:49.174] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:21:49.174] Browser LOG     [v0] Toast state updated: 1
+[00:21:49.174] Browser LOG     [v0] Toast state updated: 1
+[00:21:49.174] Browser LOG     [v0] Toast state updated: 1
+[00:21:49.174] Browser LOG     [v0] Toast state updated: 1
+[00:21:49.174] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:49.174] Browser LOG     [v0] Rendering toast: 16 🏆 MERIALES RACHELLE ANN Won!
+[00:21:49.174] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:49.174] Browser LOG     [v0] Rendering toast: 16 🏆 MERIALES RACHELLE ANN Won!
+[00:21:49.298] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:21:49.298] Browser LOG     [v0] Toast state updated: 1
+[00:21:49.298] Browser LOG     [v0] Toast state updated: 1
+[00:21:49.298] Browser LOG     [v0] Toast state updated: 1
+[00:21:49.298] Browser LOG     [v0] Toast state updated: 1
+[00:21:49.298] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:49.298] Browser LOG     [v0] Rendering toast: 16 🏆 MERIALES RACHELLE ANN Won!
+[00:21:49.298] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:49.298] Browser LOG     [v0] Rendering toast: 16 🏆 MERIALES RACHELLE ANN Won!
+[00:21:51.758] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:21:51.758] Browser LOG     [v0] Toast state updated: 1
+[00:21:51.758] Browser LOG     [v0] Toast state updated: 1
+[00:21:51.758] Browser LOG     [v0] Toast state updated: 1
+[00:21:51.758] Browser LOG     [v0] Toast state updated: 1
+[00:21:51.758] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:51.758] Browser LOG     [v0] Rendering toast: 16 🏆 MERIALES RACHELLE ANN Won!
+[00:21:51.758] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:51.758] Browser LOG     [v0] Rendering toast: 16 🏆 MERIALES RACHELLE ANN Won!
+[00:21:54.178] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:21:54.178] Browser LOG     [v0] Toast state updated: 1
+[00:21:54.178] Browser LOG     [v0] Toast state updated: 1
+[00:21:54.178] Browser LOG     [v0] Toast state updated: 1
+[00:21:54.178] Browser LOG     [v0] Toast state updated: 1
+[00:21:54.178] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:54.178] Browser LOG     [v0] Rendering toast: 16 🏆 MERIALES RACHELLE ANN Won!
+[00:21:54.178] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:21:54.178] Browser LOG     [v0] Rendering toast: 16 🏆 MERIALES RACHELLE ANN Won!
+[00:22:13.920] Server  LOG     [v0] Toaster rendering with toasts: 0
+[00:22:14.158] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:14.414] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:22:14.414] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:22:14.535] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:22:14.535] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:22:14.535] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765217153501}
+[00:22:53.045] Server  LOG      ✓ Compiled in 90ms
+[00:23:08.557] Server  LOG      ✓ Compiled in 46ms
+[00:23:40.022] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:23:40.022] Browser LOG     [v0] Toast state updated: 1
+[00:23:40.022] Browser LOG     [v0] Toast state updated: 1
+[00:23:40.022] Browser LOG     [v0] Toast state updated: 1
+[00:23:40.022] Browser LOG     [v0] Toast state updated: 1
+[00:23:40.022] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:23:40.022] Browser LOG     [v0] Toast state updated: 1
+[00:23:40.022] Browser LOG     [v0] Toast state updated: 1
+[00:23:40.022] Browser LOG     [v0] Toast state updated: 1
+[00:23:40.022] Browser LOG     [v0] Toast state updated: 1
+[00:23:40.022] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:23:40.022] Browser LOG     [v0] Rendering toast: 2 🏆 DE LEON JOEMAR Won!
+[00:23:40.022] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:23:40.022] Browser LOG     [v0] Rendering toast: 2 🏆 DE LEON JOEMAR Won!
+[00:23:45.176] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:23:45.176] Browser LOG     [v0] Toast state updated: 1
+[00:23:45.176] Browser LOG     [v0] Toast state updated: 1
+[00:23:45.176] Browser LOG     [v0] Toast state updated: 1
+[00:23:45.176] Browser LOG     [v0] Toast state updated: 1
+[00:23:45.176] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:23:45.176] Browser LOG     [v0] Rendering toast: 2 🏆 DE LEON JOEMAR Won!
+[00:23:45.176] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:23:45.176] Browser LOG     [v0] Rendering toast: 2 🏆 DE LEON JOEMAR Won!
+[00:24:19.292] Server  LOG      ✓ Compiled in 63ms
+[00:24:27.419] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:24:27.419] Browser LOG     [v0] Toast state updated: 1
+[00:24:27.419] Browser LOG     [v0] Toast state updated: 1
+[00:24:27.419] Browser LOG     [v0] Toast state updated: 1
+[00:24:27.419] Browser LOG     [v0] Toast state updated: 1
+[00:24:27.419] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:24:27.419] Browser LOG     [v0] Toast state updated: 1
+[00:24:27.419] Browser LOG     [v0] Toast state updated: 1
+[00:24:27.419] Browser LOG     [v0] Toast state updated: 1
+[00:24:27.419] Browser LOG     [v0] Toast state updated: 1
+[00:24:27.419] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:24:27.419] Browser LOG     [v0] Rendering toast: 4 🏆 ORTEGA DENICE Won!
+[00:24:27.419] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:24:27.419] Browser LOG     [v0] Rendering toast: 4 🏆 ORTEGA DENICE Won!
+[00:24:28.757] Server  LOG      ✓ Compiled in 88ms
+[00:24:32.569] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:24:32.569] Browser LOG     [v0] Toast state updated: 1
+[00:24:32.569] Browser LOG     [v0] Toast state updated: 1
+[00:24:32.569] Browser LOG     [v0] Toast state updated: 1
+[00:24:32.569] Browser LOG     [v0] Toast state updated: 1
+[00:24:32.569] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:24:32.569] Browser LOG     [v0] Rendering toast: 4 🏆 ORTEGA DENICE Won!
+[00:24:32.569] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:24:32.569] Browser LOG     [v0] Rendering toast: 4 🏆 ORTEGA DENICE Won!
+[00:24:33.969] Server  LOG      ✓ Compiled in 43ms
+[00:25:12.373] Server  LOG     [v0] Toaster rendering with toasts: 0
+[00:25:12.592] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:12.823] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:25:12.823] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:25:12.928] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:25:12.929] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:25:12.929] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765217331910}
+[00:25:16.424] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:25:16.424] Browser LOG     [v0] Toast state updated: 1
+[00:25:16.424] Browser LOG     [v0] Toast state updated: 1
+[00:25:16.424] Browser LOG     [v0] Toast state updated: 1
+[00:25:16.424] Browser LOG     [v0] Toast state updated: 1
+[00:25:16.424] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:25:16.424] Browser LOG     [v0] Toast state updated: 1
+[00:25:16.424] Browser LOG     [v0] Toast state updated: 1
+[00:25:16.424] Browser LOG     [v0] Toast state updated: 1
+[00:25:16.424] Browser LOG     [v0] Toast state updated: 1
+[00:25:16.424] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:25:16.424] Browser LOG     [v0] Rendering toast: 2 🏆 ISAGUIRRE MELODINA Won!
+[00:25:16.424] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:25:16.424] Browser LOG     [v0] Rendering toast: 2 🏆 ISAGUIRRE MELODINA Won!
+[00:25:39.089] Server  LOG      ✓ Compiled in 73ms
+[00:25:45.430] Server  LOG      ✓ Compiled in 47ms
+[00:25:47.029] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:25:47.029] Browser LOG     [v0] Toast state updated: 1
+[00:25:47.029] Browser LOG     [v0] Toast state updated: 1
+[00:25:47.029] Browser LOG     [v0] Toast state updated: 1
+[00:25:47.029] Browser LOG     [v0] Toast state updated: 1
+[00:25:47.029] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:25:47.029] Browser LOG     [v0] Rendering toast: 2 🏆 ISAGUIRRE MELODINA Won!
+[00:25:47.029] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:25:47.030] Browser LOG     [v0] Rendering toast: 2 🏆 ISAGUIRRE MELODINA Won!
+[00:25:51.546] Server  LOG      ✓ Compiled in 39ms
+[00:26:29.603] Server  LOG      ✓ Compiled in 67ms
+[00:26:36.859] Server  LOG      ✓ Compiled in 70ms
+[00:26:43.321] Server  LOG      ✓ Compiled in 45ms
+[00:27:16.454] Server  LOG      ✓ Compiled in 92ms
+[00:27:22.951] Server  LOG      ✓ Compiled in 54ms
+[00:27:58.524] Server  LOG      ✓ Compiled in 46ms
+[00:28:16.680] Server  LOG      ✓ Compiled in 48ms
+[00:28:33.902] Server  LOG      ✓ Compiled in 46ms
+[00:29:01.328] Server  LOG      ✓ Compiled in 76ms
+[00:29:04.704] Server  LOG      ✓ Compiled in 53ms
+[00:29:16.589] Server  LOG      ✓ Compiled in 64ms
+[00:29:21.343] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:21.343] Browser LOG     [v0] Toast state updated: 1
+[00:29:21.343] Browser LOG     [v0] Toast state updated: 1
+[00:29:21.343] Browser LOG     [v0] Toast state updated: 1
+[00:29:21.343] Browser LOG     [v0] Toast state updated: 1
+[00:29:21.343] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:21.343] Browser LOG     [v0] Toast state updated: 1
+[00:29:21.343] Browser LOG     [v0] Toast state updated: 1
+[00:29:21.343] Browser LOG     [v0] Toast state updated: 1
+[00:29:21.343] Browser LOG     [v0] Toast state updated: 1
+[00:29:21.343] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:21.343] Browser LOG     [v0] Rendering toast: 4 🏆 VILLACORA RONALDO Won!
+[00:29:21.343] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:21.343] Browser LOG     [v0] Rendering toast: 4 🏆 VILLACORA RONALDO Won!
+[00:29:26.489] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:29:26.489] Browser LOG     [v0] Toast state updated: 1
+[00:29:26.489] Browser LOG     [v0] Toast state updated: 1
+[00:29:26.489] Browser LOG     [v0] Toast state updated: 1
+[00:29:26.489] Browser LOG     [v0] Toast state updated: 1
+[00:29:26.489] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:26.489] Browser LOG     [v0] Rendering toast: 4 🏆 VILLACORA RONALDO Won!
+[00:29:26.489] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:26.489] Browser LOG     [v0] Rendering toast: 4 🏆 VILLACORA RONALDO Won!
+[00:29:27.418] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:27.418] Browser LOG     [v0] Toast state updated: 1
+[00:29:27.418] Browser LOG     [v0] Toast state updated: 1
+[00:29:27.418] Browser LOG     [v0] Toast state updated: 1
+[00:29:27.418] Browser LOG     [v0] Toast state updated: 1
+[00:29:27.418] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:27.418] Browser LOG     [v0] Toast state updated: 1
+[00:29:27.418] Browser LOG     [v0] Toast state updated: 1
+[00:29:27.418] Browser LOG     [v0] Toast state updated: 1
+[00:29:27.418] Browser LOG     [v0] Toast state updated: 1
+[00:29:27.418] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:27.418] Browser LOG     [v0] Rendering toast: 6 🏆 CONTAPAY RENATO Won!
+[00:29:27.418] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:27.418] Browser LOG     [v0] Rendering toast: 6 🏆 CONTAPAY RENATO Won!
+[00:29:29.533] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:29.533] Browser LOG     [v0] Toast state updated: 1
+[00:29:29.533] Browser LOG     [v0] Toast state updated: 1
+[00:29:29.533] Browser LOG     [v0] Toast state updated: 1
+[00:29:29.533] Browser LOG     [v0] Toast state updated: 1
+[00:29:29.533] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:29.533] Browser LOG     [v0] Toast state updated: 1
+[00:29:29.533] Browser LOG     [v0] Toast state updated: 1
+[00:29:29.533] Browser LOG     [v0] Toast state updated: 1
+[00:29:29.533] Browser LOG     [v0] Toast state updated: 1
+[00:29:29.533] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:29.533] Browser LOG     [v0] Rendering toast: 8 🏆 DEL MUNDO DEXTER Won!
+[00:29:29.533] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:29.533] Browser LOG     [v0] Rendering toast: 8 🏆 DEL MUNDO DEXTER Won!
+[00:29:31.553] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:31.553] Browser LOG     [v0] Toast state updated: 1
+[00:29:31.553] Browser LOG     [v0] Toast state updated: 1
+[00:29:31.553] Browser LOG     [v0] Toast state updated: 1
+[00:29:31.553] Browser LOG     [v0] Toast state updated: 1
+[00:29:31.553] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:31.553] Browser LOG     [v0] Toast state updated: 1
+[00:29:31.553] Browser LOG     [v0] Toast state updated: 1
+[00:29:31.553] Browser LOG     [v0] Toast state updated: 1
+[00:29:31.553] Browser LOG     [v0] Toast state updated: 1
+[00:29:31.553] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:31.553] Browser LOG     [v0] Rendering toast: 10 🏆 AVELLAR WILFRED LORENZO Won!
+[00:29:31.553] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:31.553] Browser LOG     [v0] Rendering toast: 10 🏆 AVELLAR WILFRED LORENZO Won!
+[00:29:32.563] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:29:32.563] Browser LOG     [v0] Toast state updated: 1
+[00:29:32.563] Browser LOG     [v0] Toast state updated: 1
+[00:29:32.563] Browser LOG     [v0] Toast state updated: 1
+[00:29:32.563] Browser LOG     [v0] Toast state updated: 1
+[00:29:32.563] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:32.563] Browser LOG     [v0] Rendering toast: 10 🏆 AVELLAR WILFRED LORENZO Won!
+[00:29:32.563] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:32.563] Browser LOG     [v0] Rendering toast: 10 🏆 AVELLAR WILFRED LORENZO Won!
+[00:29:33.531] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:33.531] Browser LOG     [v0] Toast state updated: 1
+[00:29:33.531] Browser LOG     [v0] Toast state updated: 1
+[00:29:33.531] Browser LOG     [v0] Toast state updated: 1
+[00:29:33.531] Browser LOG     [v0] Toast state updated: 1
+[00:29:33.531] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:33.531] Browser LOG     [v0] Toast state updated: 1
+[00:29:33.531] Browser LOG     [v0] Toast state updated: 1
+[00:29:33.531] Browser LOG     [v0] Toast state updated: 1
+[00:29:33.531] Browser LOG     [v0] Toast state updated: 1
+[00:29:33.531] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:33.531] Browser LOG     [v0] Rendering toast: 12 🏆 MAGAT APRIL JOY Won!
+[00:29:33.531] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:33.531] Browser LOG     [v0] Rendering toast: 12 🏆 MAGAT APRIL JOY Won!
+[00:29:34.687] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:29:34.687] Browser LOG     [v0] Toast state updated: 1
+[00:29:34.687] Browser LOG     [v0] Toast state updated: 1
+[00:29:34.687] Browser LOG     [v0] Toast state updated: 1
+[00:29:34.687] Browser LOG     [v0] Toast state updated: 1
+[00:29:34.687] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:34.687] Browser LOG     [v0] Rendering toast: 12 🏆 MAGAT APRIL JOY Won!
+[00:29:34.687] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:34.687] Browser LOG     [v0] Rendering toast: 12 🏆 MAGAT APRIL JOY Won!
+[00:29:36.720] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:36.720] Browser LOG     [v0] Toast state updated: 1
+[00:29:36.720] Browser LOG     [v0] Toast state updated: 1
+[00:29:36.720] Browser LOG     [v0] Toast state updated: 1
+[00:29:36.720] Browser LOG     [v0] Toast state updated: 1
+[00:29:36.720] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:36.720] Browser LOG     [v0] Toast state updated: 1
+[00:29:36.720] Browser LOG     [v0] Toast state updated: 1
+[00:29:36.720] Browser LOG     [v0] Toast state updated: 1
+[00:29:36.720] Browser LOG     [v0] Toast state updated: 1
+[00:29:36.720] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:36.720] Browser LOG     [v0] Rendering toast: 14 🏆 PRINCENA APRIL JOY Won!
+[00:29:36.720] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:36.720] Browser LOG     [v0] Rendering toast: 14 🏆 PRINCENA APRIL JOY Won!
+[00:29:36.720] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:29:36.720] Browser LOG     [v0] Toast state updated: 1
+[00:29:36.720] Browser LOG     [v0] Toast state updated: 1
+[00:29:36.720] Browser LOG     [v0] Toast state updated: 1
+[00:29:36.720] Browser LOG     [v0] Toast state updated: 1
+[00:29:36.720] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:36.721] Browser LOG     [v0] Rendering toast: 14 🏆 PRINCENA APRIL JOY Won!
+[00:29:36.721] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:36.721] Browser LOG     [v0] Rendering toast: 14 🏆 PRINCENA APRIL JOY Won!
+[00:29:38.287] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:38.287] Browser LOG     [v0] Toast state updated: 1
+[00:29:38.287] Browser LOG     [v0] Toast state updated: 1
+[00:29:38.287] Browser LOG     [v0] Toast state updated: 1
+[00:29:38.287] Browser LOG     [v0] Toast state updated: 1
+[00:29:38.287] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:38.287] Browser LOG     [v0] Toast state updated: 1
+[00:29:38.287] Browser LOG     [v0] Toast state updated: 1
+[00:29:38.287] Browser LOG     [v0] Toast state updated: 1
+[00:29:38.287] Browser LOG     [v0] Toast state updated: 1
+[00:29:38.287] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:38.287] Browser LOG     [v0] Rendering toast: 16 🏆 AÑES ANA GRACE Won!
+[00:29:38.287] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:38.287] Browser LOG     [v0] Rendering toast: 16 🏆 AÑES ANA GRACE Won!
+[00:29:38.596] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:29:38.596] Browser LOG     [v0] Toast state updated: 1
+[00:29:38.596] Browser LOG     [v0] Toast state updated: 1
+[00:29:38.596] Browser LOG     [v0] Toast state updated: 1
+[00:29:38.596] Browser LOG     [v0] Toast state updated: 1
+[00:29:38.596] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:38.596] Browser LOG     [v0] Rendering toast: 16 🏆 AÑES ANA GRACE Won!
+[00:29:38.596] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:38.596] Browser LOG     [v0] Rendering toast: 16 🏆 AÑES ANA GRACE Won!
+[00:29:39.854] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:39.854] Browser LOG     [v0] Toast state updated: 1
+[00:29:39.854] Browser LOG     [v0] Toast state updated: 1
+[00:29:39.854] Browser LOG     [v0] Toast state updated: 1
+[00:29:39.854] Browser LOG     [v0] Toast state updated: 1
+[00:29:39.854] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:39.854] Browser LOG     [v0] Toast state updated: 1
+[00:29:39.855] Browser LOG     [v0] Toast state updated: 1
+[00:29:39.855] Browser LOG     [v0] Toast state updated: 1
+[00:29:39.855] Browser LOG     [v0] Toast state updated: 1
+[00:29:39.855] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:39.855] Browser LOG     [v0] Rendering toast: 18 🏆 ROQUINO RODEL Won!
+[00:29:39.855] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:39.855] Browser LOG     [v0] Rendering toast: 18 🏆 ROQUINO RODEL Won!
+[00:29:41.759] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:29:41.759] Browser LOG     [v0] Toast state updated: 1
+[00:29:41.759] Browser LOG     [v0] Toast state updated: 1
+[00:29:41.759] Browser LOG     [v0] Toast state updated: 1
+[00:29:41.759] Browser LOG     [v0] Toast state updated: 1
+[00:29:41.759] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:41.759] Browser LOG     [v0] Rendering toast: 18 🏆 ROQUINO RODEL Won!
+[00:29:41.759] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:41.759] Browser LOG     [v0] Rendering toast: 18 🏆 ROQUINO RODEL Won!
+[00:29:41.759] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:41.759] Browser LOG     [v0] Toast state updated: 1
+[00:29:41.759] Browser LOG     [v0] Toast state updated: 1
+[00:29:41.759] Browser LOG     [v0] Toast state updated: 1
+[00:29:41.759] Browser LOG     [v0] Toast state updated: 1
+[00:29:41.759] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:41.759] Browser LOG     [v0] Toast state updated: 1
+[00:29:41.759] Browser LOG     [v0] Toast state updated: 1
+[00:29:41.759] Browser LOG     [v0] Toast state updated: 1
+[00:29:41.759] Browser LOG     [v0] Toast state updated: 1
+[00:29:41.759] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:41.759] Browser LOG     [v0] Rendering toast: 20 🏆 DOLLAR RONA Won!
+[00:29:41.759] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:41.759] Browser LOG     [v0] Rendering toast: 20 🏆 DOLLAR RONA Won!
+[00:29:43.367] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:43.367] Browser LOG     [v0] Toast state updated: 1
+[00:29:43.367] Browser LOG     [v0] Toast state updated: 1
+[00:29:43.367] Browser LOG     [v0] Toast state updated: 1
+[00:29:43.367] Browser LOG     [v0] Toast state updated: 1
+[00:29:43.367] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:29:43.367] Browser LOG     [v0] Toast state updated: 1
+[00:29:43.367] Browser LOG     [v0] Toast state updated: 1
+[00:29:43.367] Browser LOG     [v0] Toast state updated: 1
+[00:29:43.367] Browser LOG     [v0] Toast state updated: 1
+[00:29:43.367] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:43.367] Browser LOG     [v0] Rendering toast: 22 🏆 BARJA MARY GRACE Won!
+[00:29:43.367] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:43.367] Browser LOG     [v0] Rendering toast: 22 🏆 BARJA MARY GRACE Won!
+[00:29:43.367] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:29:43.367] Browser LOG     [v0] Toast state updated: 1
+[00:29:43.368] Browser LOG     [v0] Toast state updated: 1
+[00:29:43.368] Browser LOG     [v0] Toast state updated: 1
+[00:29:43.368] Browser LOG     [v0] Toast state updated: 1
+[00:29:43.368] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:43.368] Browser LOG     [v0] Rendering toast: 22 🏆 BARJA MARY GRACE Won!
+[00:29:43.368] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:43.368] Browser LOG     [v0] Rendering toast: 22 🏆 BARJA MARY GRACE Won!
+[00:29:45.012] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:29:45.012] Browser LOG     [v0] Toast state updated: 1
+[00:29:45.012] Browser LOG     [v0] Toast state updated: 1
+[00:29:45.012] Browser LOG     [v0] Toast state updated: 1
+[00:29:45.012] Browser LOG     [v0] Toast state updated: 1
+[00:29:45.012] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:45.012] Browser LOG     [v0] Rendering toast: 22 🏆 BARJA MARY GRACE Won!
+[00:29:45.012] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:45.012] Browser LOG     [v0] Rendering toast: 22 🏆 BARJA MARY GRACE Won!
+[00:29:46.888] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:29:46.888] Browser LOG     [v0] Toast state updated: 1
+[00:29:46.888] Browser LOG     [v0] Toast state updated: 1
+[00:29:46.888] Browser LOG     [v0] Toast state updated: 1
+[00:29:46.888] Browser LOG     [v0] Toast state updated: 1
+[00:29:46.888] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:46.888] Browser LOG     [v0] Rendering toast: 22 🏆 BARJA MARY GRACE Won!
+[00:29:46.888] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:46.888] Browser LOG     [v0] Rendering toast: 22 🏆 BARJA MARY GRACE Won!
+[00:29:48.406] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:29:48.406] Browser LOG     [v0] Toast state updated: 1
+[00:29:48.406] Browser LOG     [v0] Toast state updated: 1
+[00:29:48.406] Browser LOG     [v0] Toast state updated: 1
+[00:29:48.406] Browser LOG     [v0] Toast state updated: 1
+[00:29:48.406] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:48.406] Browser LOG     [v0] Rendering toast: 22 🏆 BARJA MARY GRACE Won!
+[00:29:48.406] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:29:48.406] Browser LOG     [v0] Rendering toast: 22 🏆 BARJA MARY GRACE Won!
+[00:31:14.309] Server  LOG      ✓ Compiled in 96ms
+[00:33:19.469] Server  LOG     [v0] Toaster rendering with toasts: 0
+[00:33:19.754] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:20.079] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:33:20.079] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:33:20.199] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:33:20.199] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:33:20.199] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765217819171}
+[00:33:39.148] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:39.148] Browser LOG     [v0] Toast state updated: 1
+[00:33:39.148] Browser LOG     [v0] Toast state updated: 1
+[00:33:39.148] Browser LOG     [v0] Toast state updated: 1
+[00:33:39.148] Browser LOG     [v0] Toast state updated: 1
+[00:33:39.148] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:39.148] Browser LOG     [v0] Toast state updated: 1
+[00:33:39.148] Browser LOG     [v0] Toast state updated: 1
+[00:33:39.148] Browser LOG     [v0] Toast state updated: 1
+[00:33:39.148] Browser LOG     [v0] Toast state updated: 1
+[00:33:39.148] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:39.148] Browser LOG     [v0] Rendering toast: 2 🏆 ACERET PRINCE Won!
+[00:33:39.148] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:39.148] Browser LOG     [v0] Rendering toast: 2 🏆 ACERET PRINCE Won!
+[00:33:43.774] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:43.775] Browser LOG     [v0] Toast state updated: 1
+[00:33:43.775] Browser LOG     [v0] Toast state updated: 1
+[00:33:43.775] Browser LOG     [v0] Toast state updated: 1
+[00:33:43.775] Browser LOG     [v0] Toast state updated: 1
+[00:33:43.775] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:43.775] Browser LOG     [v0] Toast state updated: 1
+[00:33:43.775] Browser LOG     [v0] Toast state updated: 1
+[00:33:43.775] Browser LOG     [v0] Toast state updated: 1
+[00:33:43.775] Browser LOG     [v0] Toast state updated: 1
+[00:33:43.775] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:43.775] Browser LOG     [v0] Rendering toast: 4 🏆 BALTAZAR MARVIN Won!
+[00:33:43.775] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:43.775] Browser LOG     [v0] Rendering toast: 4 🏆 BALTAZAR MARVIN Won!
+[00:33:44.290] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:33:44.290] Browser LOG     [v0] Toast state updated: 1
+[00:33:44.290] Browser LOG     [v0] Toast state updated: 1
+[00:33:44.290] Browser LOG     [v0] Toast state updated: 1
+[00:33:44.290] Browser LOG     [v0] Toast state updated: 1
+[00:33:44.290] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:44.290] Browser LOG     [v0] Rendering toast: 4 🏆 BALTAZAR MARVIN Won!
+[00:33:44.290] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:44.290] Browser LOG     [v0] Rendering toast: 4 🏆 BALTAZAR MARVIN Won!
+[00:33:48.928] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:33:48.928] Browser LOG     [v0] Toast state updated: 1
+[00:33:48.928] Browser LOG     [v0] Toast state updated: 1
+[00:33:48.928] Browser LOG     [v0] Toast state updated: 1
+[00:33:48.928] Browser LOG     [v0] Toast state updated: 1
+[00:33:48.928] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:48.928] Browser LOG     [v0] Rendering toast: 4 🏆 BALTAZAR MARVIN Won!
+[00:33:48.928] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:48.928] Browser LOG     [v0] Rendering toast: 4 🏆 BALTAZAR MARVIN Won!
+[00:33:54.131] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:54.131] Browser LOG     [v0] Toast state updated: 1
+[00:33:54.131] Browser LOG     [v0] Toast state updated: 1
+[00:33:54.131] Browser LOG     [v0] Toast state updated: 1
+[00:33:54.131] Browser LOG     [v0] Toast state updated: 1
+[00:33:54.131] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:54.131] Browser LOG     [v0] Rendering toast: 5 ↩️ Re-entered
+[00:33:54.131] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:54.131] Browser LOG     [v0] Rendering toast: 5 ↩️ Re-entered
+[00:33:54.949] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:54.949] Browser LOG     [v0] Toast state updated: 1
+[00:33:54.950] Browser LOG     [v0] Toast state updated: 1
+[00:33:54.950] Browser LOG     [v0] Toast state updated: 1
+[00:33:54.950] Browser LOG     [v0] Toast state updated: 1
+[00:33:54.950] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:54.950] Browser LOG     [v0] Rendering toast: 6 ↩️ Re-entered
+[00:33:54.950] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:54.950] Browser LOG     [v0] Rendering toast: 6 ↩️ Re-entered
+[00:33:54.950] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:54.950] Browser LOG     [v0] Toast state updated: 1
+[00:33:54.950] Browser LOG     [v0] Toast state updated: 1
+[00:33:54.950] Browser LOG     [v0] Toast state updated: 1
+[00:33:54.950] Browser LOG     [v0] Toast state updated: 1
+[00:33:54.950] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:54.950] Browser LOG     [v0] Rendering toast: 7 ↩️ Re-entered
+[00:33:54.950] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:54.950] Browser LOG     [v0] Rendering toast: 7 ↩️ Re-entered
+[00:33:55.099] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:55.099] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.099] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.099] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.099] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.099] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:55.099] Browser LOG     [v0] Rendering toast: 8 ↩️ Re-entered
+[00:33:55.099] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:55.099] Browser LOG     [v0] Rendering toast: 8 ↩️ Re-entered
+[00:33:55.489] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:55.489] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.489] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.489] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.489] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.489] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:55.489] Browser LOG     [v0] Rendering toast: 9 ↩️ Re-entered
+[00:33:55.489] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:55.489] Browser LOG     [v0] Rendering toast: 9 ↩️ Re-entered
+[00:33:55.489] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:55.489] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.489] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.489] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.489] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.489] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:55.489] Browser LOG     [v0] Rendering toast: 10 ↩️ Re-entered
+[00:33:55.489] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:55.489] Browser LOG     [v0] Rendering toast: 10 ↩️ Re-entered
+[00:33:55.650] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:55.650] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.650] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.650] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.650] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.650] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:55.650] Browser LOG     [v0] Rendering toast: 11 ↩️ Re-entered
+[00:33:55.650] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:55.650] Browser LOG     [v0] Rendering toast: 11 ↩️ Re-entered
+[00:33:55.818] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:55.818] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.818] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.818] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.818] Browser LOG     [v0] Toast state updated: 1
+[00:33:55.818] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:55.818] Browser LOG     [v0] Rendering toast: 12 ↩️ Re-entered
+[00:33:55.818] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:55.818] Browser LOG     [v0] Rendering toast: 12 ↩️ Re-entered
+[00:33:56.582] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:56.582] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.582] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.582] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.582] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.582] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:56.582] Browser LOG     [v0] Rendering toast: 13 ↩️ Re-entered
+[00:33:56.582] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:56.582] Browser LOG     [v0] Rendering toast: 13 ↩️ Re-entered
+[00:33:56.582] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:56.582] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.582] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.582] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.582] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.582] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:56.582] Browser LOG     [v0] Rendering toast: 14 ↩️ Re-entered
+[00:33:56.582] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:56.582] Browser LOG     [v0] Rendering toast: 14 ↩️ Re-entered
+[00:33:56.772] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:56.773] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.773] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.773] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.773] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.773] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:56.773] Browser LOG     [v0] Rendering toast: 15 ↩️ Re-entered
+[00:33:56.773] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:56.773] Browser LOG     [v0] Rendering toast: 15 ↩️ Re-entered
+[00:33:56.949] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:56.949] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.949] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.949] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.949] Browser LOG     [v0] Toast state updated: 1
+[00:33:56.949] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:56.949] Browser LOG     [v0] Rendering toast: 16 ↩️ Re-entered
+[00:33:56.949] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:56.949] Browser LOG     [v0] Rendering toast: 16 ↩️ Re-entered
+[00:33:57.135] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:33:57.135] Browser LOG     [v0] Toast state updated: 1
+[00:33:57.135] Browser LOG     [v0] Toast state updated: 1
+[00:33:57.135] Browser LOG     [v0] Toast state updated: 1
+[00:33:57.135] Browser LOG     [v0] Toast state updated: 1
+[00:33:57.135] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:57.135] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:33:57.135] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:57.135] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:33:59.298] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:33:59.298] Browser LOG     [v0] Toast state updated: 1
+[00:33:59.298] Browser LOG     [v0] Toast state updated: 1
+[00:33:59.298] Browser LOG     [v0] Toast state updated: 1
+[00:33:59.298] Browser LOG     [v0] Toast state updated: 1
+[00:33:59.298] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:59.298] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:33:59.298] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:33:59.298] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:00.018] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:34:00.018] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.018] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.018] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.018] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.018] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:00.018] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:00.018] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:00.018] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:00.018] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:34:00.018] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.018] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.018] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.018] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.018] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:00.018] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:00.018] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:00.019] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:00.176] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:34:00.176] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.176] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.176] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.176] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.176] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:00.176] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:00.176] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:00.176] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:00.698] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:34:00.698] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.698] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.698] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.698] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.698] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:00.698] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:00.698] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:00.698] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:00.698] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:34:00.698] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.698] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.698] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.698] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.698] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:00.698] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:00.698] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:00.698] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:00.698] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:34:00.698] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.698] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.698] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.698] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.698] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:00.698] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:00.698] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:00.698] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:00.866] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:34:00.866] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.866] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.867] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.867] Browser LOG     [v0] Toast state updated: 1
+[00:34:00.867] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:00.867] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:00.867] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:00.867] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:03.090] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toast state updated: 1
+[00:34:03.090] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:03.090] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:03.090] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:03.090] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:15.022] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:34:15.022] Browser LOG     [v0] Toast state updated: 1
+[00:34:15.022] Browser LOG     [v0] Toast state updated: 1
+[00:34:15.022] Browser LOG     [v0] Toast state updated: 1
+[00:34:15.022] Browser LOG     [v0] Toast state updated: 1
+[00:34:15.022] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:15.022] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:15.022] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:34:15.022] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:34:52.197] Server  LOG      ✓ Compiled in 75ms
+[00:36:09.086] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:36:09.086] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:36:09.086] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:36:09.086] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:36:19.095] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:36:19.095] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:36:19.095] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:36:19.095] Browser LOG     [v0] Rendering toast: 17 ↩️ Re-entered
+[00:36:22.101] Server  LOG     [v0] Toaster rendering with toasts: 0
+[00:36:22.343] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:22.600] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:36:22.600] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:36:22.715] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:36:22.715] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:36:22.715] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765218001689}
+[00:36:37.584] Server  LOG      ✓ Compiled in 68ms
+[00:36:38.096] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:36:38.096] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:36:40.007] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:36:40.007] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:36:40.807] Server  LOG     [v0] Toaster rendering with toasts: 0
+[00:36:41.045] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:41.323] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:36:41.323] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:36:41.432] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:36:41.432] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:36:41.432] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765218020410}
+[00:37:03.834] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:03.834] Browser LOG     [v0] Toast state updated: 1
+[00:37:03.834] Browser LOG     [v0] Toast state updated: 1
+[00:37:03.834] Browser LOG     [v0] Toast state updated: 1
+[00:37:03.834] Browser LOG     [v0] Toast state updated: 1
+[00:37:03.834] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:03.834] Browser LOG     [v0] Toast state updated: 1
+[00:37:03.834] Browser LOG     [v0] Toast state updated: 1
+[00:37:03.834] Browser LOG     [v0] Toast state updated: 1
+[00:37:03.834] Browser LOG     [v0] Toast state updated: 1
+[00:37:03.834] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:03.834] Browser LOG     [v0] Rendering toast: 2 🏆 PADULLON MARIA KRISTINE Won!
+[00:37:03.834] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:03.834] Browser LOG     [v0] Rendering toast: 2 🏆 PADULLON MARIA KRISTINE Won!
+[00:37:05.658] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:05.658] Browser LOG     [v0] Toast state updated: 1
+[00:37:05.658] Browser LOG     [v0] Toast state updated: 1
+[00:37:05.658] Browser LOG     [v0] Toast state updated: 1
+[00:37:05.658] Browser LOG     [v0] Toast state updated: 1
+[00:37:05.658] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:05.658] Browser LOG     [v0] Toast state updated: 1
+[00:37:05.658] Browser LOG     [v0] Toast state updated: 1
+[00:37:05.658] Browser LOG     [v0] Toast state updated: 1
+[00:37:05.658] Browser LOG     [v0] Toast state updated: 1
+[00:37:05.658] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:05.658] Browser LOG     [v0] Rendering toast: 4 🏆 TORRENTE ALLAN Won!
+[00:37:05.658] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:05.658] Browser LOG     [v0] Rendering toast: 4 🏆 TORRENTE ALLAN Won!
+[00:37:08.974] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:37:08.974] Browser LOG     [v0] Toast state updated: 1
+[00:37:08.974] Browser LOG     [v0] Toast state updated: 1
+[00:37:08.974] Browser LOG     [v0] Toast state updated: 1
+[00:37:08.974] Browser LOG     [v0] Toast state updated: 1
+[00:37:08.974] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:08.974] Browser LOG     [v0] Rendering toast: 4 🏆 TORRENTE ALLAN Won!
+[00:37:08.974] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:08.974] Browser LOG     [v0] Rendering toast: 4 🏆 TORRENTE ALLAN Won!
+[00:37:10.797] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:37:10.797] Browser LOG     [v0] Toast state updated: 1
+[00:37:10.797] Browser LOG     [v0] Toast state updated: 1
+[00:37:10.797] Browser LOG     [v0] Toast state updated: 1
+[00:37:10.797] Browser LOG     [v0] Toast state updated: 1
+[00:37:10.797] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:10.797] Browser LOG     [v0] Rendering toast: 4 🏆 TORRENTE ALLAN Won!
+[00:37:10.797] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:10.797] Browser LOG     [v0] Rendering toast: 4 🏆 TORRENTE ALLAN Won!
+[00:37:14.351] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:14.351] Browser LOG     [v0] Toast state updated: 1
+[00:37:14.352] Browser LOG     [v0] Toast state updated: 1
+[00:37:14.352] Browser LOG     [v0] Toast state updated: 1
+[00:37:14.352] Browser LOG     [v0] Toast state updated: 1
+[00:37:14.352] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:14.352] Browser LOG     [v0] Toast state updated: 1
+[00:37:14.352] Browser LOG     [v0] Toast state updated: 1
+[00:37:14.352] Browser LOG     [v0] Toast state updated: 1
+[00:37:14.352] Browser LOG     [v0] Toast state updated: 1
+[00:37:14.352] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:14.352] Browser LOG     [v0] Rendering toast: 6 🏆 PAGUNTALAN RAY NOR VINCENT Won!
+[00:37:14.352] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:14.352] Browser LOG     [v0] Rendering toast: 6 🏆 PAGUNTALAN RAY NOR VINCENT Won!
+[00:37:16.168] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:16.168] Browser LOG     [v0] Toast state updated: 1
+[00:37:16.168] Browser LOG     [v0] Toast state updated: 1
+[00:37:16.168] Browser LOG     [v0] Toast state updated: 1
+[00:37:16.168] Browser LOG     [v0] Toast state updated: 1
+[00:37:16.168] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:16.168] Browser LOG     [v0] Toast state updated: 1
+[00:37:16.168] Browser LOG     [v0] Toast state updated: 1
+[00:37:16.168] Browser LOG     [v0] Toast state updated: 1
+[00:37:16.168] Browser LOG     [v0] Toast state updated: 1
+[00:37:16.168] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:16.168] Browser LOG     [v0] Rendering toast: 8 🏆 PUTI JHOPET Won!
+[00:37:16.168] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:16.168] Browser LOG     [v0] Rendering toast: 8 🏆 PUTI JHOPET Won!
+[00:37:19.618] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:37:19.618] Browser LOG     [v0] Toast state updated: 1
+[00:37:19.618] Browser LOG     [v0] Toast state updated: 1
+[00:37:19.618] Browser LOG     [v0] Toast state updated: 1
+[00:37:19.618] Browser LOG     [v0] Toast state updated: 1
+[00:37:19.618] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:19.618] Browser LOG     [v0] Rendering toast: 8 🏆 PUTI JHOPET Won!
+[00:37:19.618] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:19.618] Browser LOG     [v0] Rendering toast: 8 🏆 PUTI JHOPET Won!
+[00:37:19.618] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:19.618] Browser LOG     [v0] Toast state updated: 1
+[00:37:19.618] Browser LOG     [v0] Toast state updated: 1
+[00:37:19.618] Browser LOG     [v0] Toast state updated: 1
+[00:37:19.618] Browser LOG     [v0] Toast state updated: 1
+[00:37:19.618] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:19.618] Browser LOG     [v0] Toast state updated: 1
+[00:37:19.618] Browser LOG     [v0] Toast state updated: 1
+[00:37:19.618] Browser LOG     [v0] Toast state updated: 1
+[00:37:19.618] Browser LOG     [v0] Toast state updated: 1
+[00:37:19.618] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:19.618] Browser LOG     [v0] Rendering toast: 10 🏆 ARCEO LEMMOR Won!
+[00:37:19.618] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:19.618] Browser LOG     [v0] Rendering toast: 10 🏆 ARCEO LEMMOR Won!
+[00:37:21.293] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:37:21.293] Browser LOG     [v0] Toast state updated: 1
+[00:37:21.293] Browser LOG     [v0] Toast state updated: 1
+[00:37:21.293] Browser LOG     [v0] Toast state updated: 1
+[00:37:21.293] Browser LOG     [v0] Toast state updated: 1
+[00:37:21.293] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:21.293] Browser LOG     [v0] Rendering toast: 10 🏆 ARCEO LEMMOR Won!
+[00:37:21.293] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:21.293] Browser LOG     [v0] Rendering toast: 10 🏆 ARCEO LEMMOR Won!
+[00:37:23.126] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:23.126] Browser LOG     [v0] Toast state updated: 1
+[00:37:23.126] Browser LOG     [v0] Toast state updated: 1
+[00:37:23.126] Browser LOG     [v0] Toast state updated: 1
+[00:37:23.126] Browser LOG     [v0] Toast state updated: 1
+[00:37:23.126] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:23.126] Browser LOG     [v0] Toast state updated: 1
+[00:37:23.126] Browser LOG     [v0] Toast state updated: 1
+[00:37:23.126] Browser LOG     [v0] Toast state updated: 1
+[00:37:23.126] Browser LOG     [v0] Toast state updated: 1
+[00:37:23.126] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:23.126] Browser LOG     [v0] Rendering toast: 12 🏆 RIVERA REY-AN Won!
+[00:37:23.126] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:23.126] Browser LOG     [v0] Rendering toast: 12 🏆 RIVERA REY-AN Won!
+[00:37:24.760] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:37:24.760] Browser LOG     [v0] Toast state updated: 1
+[00:37:24.760] Browser LOG     [v0] Toast state updated: 1
+[00:37:24.760] Browser LOG     [v0] Toast state updated: 1
+[00:37:24.760] Browser LOG     [v0] Toast state updated: 1
+[00:37:24.760] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:24.760] Browser LOG     [v0] Rendering toast: 12 🏆 RIVERA REY-AN Won!
+[00:37:24.760] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:24.760] Browser LOG     [v0] Rendering toast: 12 🏆 RIVERA REY-AN Won!
+[00:37:25.253] Server  LOG     [v0] Toaster rendering with toasts: 0
+[00:37:25.506] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:37:25.809] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:37:25.809] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:37:25.924] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:37:25.924] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:37:25.924] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765218064901}
+[00:37:27.743] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:27.743] Browser LOG     [v0] Toast state updated: 1
+[00:37:27.743] Browser LOG     [v0] Toast state updated: 1
+[00:37:27.743] Browser LOG     [v0] Toast state updated: 1
+[00:37:27.743] Browser LOG     [v0] Toast state updated: 1
+[00:37:27.743] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:27.743] Browser LOG     [v0] Rendering toast: 1 ↩️ Re-entered
+[00:37:27.743] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:27.743] Browser LOG     [v0] Rendering toast: 1 ↩️ Re-entered
+[00:37:27.743] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:27.743] Browser LOG     [v0] Toast state updated: 1
+[00:37:27.743] Browser LOG     [v0] Toast state updated: 1
+[00:37:27.743] Browser LOG     [v0] Toast state updated: 1
+[00:37:27.743] Browser LOG     [v0] Toast state updated: 1
+[00:37:27.743] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:27.743] Browser LOG     [v0] Rendering toast: 2 ↩️ Re-entered
+[00:37:27.743] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:27.743] Browser LOG     [v0] Rendering toast: 2 ↩️ Re-entered
+[00:37:27.916] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:27.916] Browser LOG     [v0] Toast state updated: 1
+[00:37:27.916] Browser LOG     [v0] Toast state updated: 1
+[00:37:27.916] Browser LOG     [v0] Toast state updated: 1
+[00:37:27.916] Browser LOG     [v0] Toast state updated: 1
+[00:37:27.916] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:27.916] Browser LOG     [v0] Rendering toast: 3 ↩️ Re-entered
+[00:37:27.916] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:27.916] Browser LOG     [v0] Rendering toast: 3 ↩️ Re-entered
+[00:37:28.212] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:28.212] Browser LOG     [v0] Toast state updated: 1
+[00:37:28.212] Browser LOG     [v0] Toast state updated: 1
+[00:37:28.212] Browser LOG     [v0] Toast state updated: 1
+[00:37:28.212] Browser LOG     [v0] Toast state updated: 1
+[00:37:28.212] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:28.212] Browser LOG     [v0] Rendering toast: 4 ↩️ Re-entered
+[00:37:28.212] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:28.212] Browser LOG     [v0] Rendering toast: 4 ↩️ Re-entered
+[00:37:29.937] Server  LOG     [v0] Toaster rendering with toasts: 0
+[00:37:30.171] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:37:30.446] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:37:30.446] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:37:30.566] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:37:30.566] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:37:30.566] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765218069537}
+[00:37:41.494] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:41.494] Browser LOG     [v0] Toast state updated: 1
+[00:37:41.494] Browser LOG     [v0] Toast state updated: 1
+[00:37:41.494] Browser LOG     [v0] Toast state updated: 1
+[00:37:41.494] Browser LOG     [v0] Toast state updated: 1
+[00:37:41.494] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:41.494] Browser LOG     [v0] Toast state updated: 1
+[00:37:41.494] Browser LOG     [v0] Toast state updated: 1
+[00:37:41.494] Browser LOG     [v0] Toast state updated: 1
+[00:37:41.494] Browser LOG     [v0] Toast state updated: 1
+[00:37:41.494] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:41.494] Browser LOG     [v0] Rendering toast: 2 🏆 MADRID RYAN JAY Won!
+[00:37:41.494] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:41.494] Browser LOG     [v0] Rendering toast: 2 🏆 MADRID RYAN JAY Won!
+[00:37:45.097] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:45.097] Browser LOG     [v0] Toast state updated: 1
+[00:37:45.097] Browser LOG     [v0] Toast state updated: 1
+[00:37:45.097] Browser LOG     [v0] Toast state updated: 1
+[00:37:45.097] Browser LOG     [v0] Toast state updated: 1
+[00:37:45.097] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:45.097] Browser LOG     [v0] Toast state updated: 1
+[00:37:45.097] Browser LOG     [v0] Toast state updated: 1
+[00:37:45.097] Browser LOG     [v0] Toast state updated: 1
+[00:37:45.097] Browser LOG     [v0] Toast state updated: 1
+[00:37:45.097] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:45.097] Browser LOG     [v0] Rendering toast: 4 🏆 AMOLATO LOIDA Won!
+[00:37:45.097] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:45.097] Browser LOG     [v0] Rendering toast: 4 🏆 AMOLATO LOIDA Won!
+[00:37:46.627] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:37:46.628] Browser LOG     [v0] Toast state updated: 1
+[00:37:46.628] Browser LOG     [v0] Toast state updated: 1
+[00:37:46.628] Browser LOG     [v0] Toast state updated: 1
+[00:37:46.628] Browser LOG     [v0] Toast state updated: 1
+[00:37:46.628] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:46.628] Browser LOG     [v0] Rendering toast: 4 🏆 AMOLATO LOIDA Won!
+[00:37:46.628] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:46.628] Browser LOG     [v0] Rendering toast: 4 🏆 AMOLATO LOIDA Won!
+[00:37:46.883] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:46.883] Browser LOG     [v0] Toast state updated: 1
+[00:37:46.883] Browser LOG     [v0] Toast state updated: 1
+[00:37:46.883] Browser LOG     [v0] Toast state updated: 1
+[00:37:46.883] Browser LOG     [v0] Toast state updated: 1
+[00:37:46.883] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:46.883] Browser LOG     [v0] Toast state updated: 1
+[00:37:46.883] Browser LOG     [v0] Toast state updated: 1
+[00:37:46.883] Browser LOG     [v0] Toast state updated: 1
+[00:37:46.883] Browser LOG     [v0] Toast state updated: 1
+[00:37:46.883] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:46.883] Browser LOG     [v0] Rendering toast: 6 🏆 AMBROSIO RICHELK Won!
+[00:37:46.883] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:46.883] Browser LOG     [v0] Rendering toast: 6 🏆 AMBROSIO RICHELK Won!
+[00:37:49.869] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:49.869] Browser LOG     [v0] Toast state updated: 1
+[00:37:49.869] Browser LOG     [v0] Toast state updated: 1
+[00:37:49.869] Browser LOG     [v0] Toast state updated: 1
+[00:37:49.869] Browser LOG     [v0] Toast state updated: 1
+[00:37:49.869] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:49.869] Browser LOG     [v0] Toast state updated: 1
+[00:37:49.869] Browser LOG     [v0] Toast state updated: 1
+[00:37:49.869] Browser LOG     [v0] Toast state updated: 1
+[00:37:49.869] Browser LOG     [v0] Toast state updated: 1
+[00:37:49.869] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:49.869] Browser LOG     [v0] Rendering toast: 8 🏆 REGASA JESSE ROWEL Won!
+[00:37:49.869] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:49.869] Browser LOG     [v0] Rendering toast: 8 🏆 REGASA JESSE ROWEL Won!
+[00:37:50.250] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:37:50.250] Browser LOG     [v0] Toast state updated: 1
+[00:37:50.250] Browser LOG     [v0] Toast state updated: 1
+[00:37:50.250] Browser LOG     [v0] Toast state updated: 1
+[00:37:50.250] Browser LOG     [v0] Toast state updated: 1
+[00:37:50.250] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:50.250] Browser LOG     [v0] Rendering toast: 8 🏆 REGASA JESSE ROWEL Won!
+[00:37:50.250] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:50.250] Browser LOG     [v0] Rendering toast: 8 🏆 REGASA JESSE ROWEL Won!
+[00:37:52.010] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:37:52.010] Browser LOG     [v0] Toast state updated: 1
+[00:37:52.010] Browser LOG     [v0] Toast state updated: 1
+[00:37:52.010] Browser LOG     [v0] Toast state updated: 1
+[00:37:52.010] Browser LOG     [v0] Toast state updated: 1
+[00:37:52.010] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:52.010] Browser LOG     [v0] Rendering toast: 8 🏆 REGASA JESSE ROWEL Won!
+[00:37:52.010] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:52.010] Browser LOG     [v0] Rendering toast: 8 🏆 REGASA JESSE ROWEL Won!
+[00:37:53.640] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:53.640] Browser LOG     [v0] Toast state updated: 1
+[00:37:53.640] Browser LOG     [v0] Toast state updated: 1
+[00:37:53.640] Browser LOG     [v0] Toast state updated: 1
+[00:37:53.640] Browser LOG     [v0] Toast state updated: 1
+[00:37:53.640] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:37:53.640] Browser LOG     [v0] Toast state updated: 1
+[00:37:53.640] Browser LOG     [v0] Toast state updated: 1
+[00:37:53.640] Browser LOG     [v0] Toast state updated: 1
+[00:37:53.640] Browser LOG     [v0] Toast state updated: 1
+[00:37:53.640] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:53.640] Browser LOG     [v0] Rendering toast: 10 🏆 CUPIADO SWEET HONEYLET Won!
+[00:37:53.640] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:53.640] Browser LOG     [v0] Rendering toast: 10 🏆 CUPIADO SWEET HONEYLET Won!
+[00:37:55.012] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:37:55.012] Browser LOG     [v0] Toast state updated: 1
+[00:37:55.012] Browser LOG     [v0] Toast state updated: 1
+[00:37:55.012] Browser LOG     [v0] Toast state updated: 1
+[00:37:55.012] Browser LOG     [v0] Toast state updated: 1
+[00:37:55.012] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:55.012] Browser LOG     [v0] Rendering toast: 10 🏆 CUPIADO SWEET HONEYLET Won!
+[00:37:55.012] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:55.012] Browser LOG     [v0] Rendering toast: 10 🏆 CUPIADO SWEET HONEYLET Won!
+[00:37:58.794] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:37:58.794] Browser LOG     [v0] Toast state updated: 1
+[00:37:58.794] Browser LOG     [v0] Toast state updated: 1
+[00:37:58.794] Browser LOG     [v0] Toast state updated: 1
+[00:37:58.794] Browser LOG     [v0] Toast state updated: 1
+[00:37:58.794] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:58.794] Browser LOG     [v0] Rendering toast: 10 🏆 CUPIADO SWEET HONEYLET Won!
+[00:37:58.794] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:37:58.794] Browser LOG     [v0] Rendering toast: 10 🏆 CUPIADO SWEET HONEYLET Won!

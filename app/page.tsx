@@ -128,21 +128,29 @@ export default function RafflePage() {
 
   return (
     <div
-      className="w-screen h-screen flex items-center justify-center p-0"
       style={{
-        backgroundImage: "url(/bg.png)",
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
         backgroundColor: "transparent",
-        backgroundSize: "cover",
-        backgroundPosition: "top",
-        backgroundAttachment: "fixed",
       }}
     >
       <div
-        className="w-full h-full max-w-full flex flex-col px-8 pb-8 rounded-xl"
-        style={{ aspectRatio: "896/640", maxHeight: "90vh" }}
+        className="flex flex-col px-8 pb-8 pt-38"
+        style={{
+          aspectRatio: "896/640",
+          width: "min(calc(100vh * 896 / 640), 100vw)",
+          height: "auto",
+          backgroundImage: "url(/bg.png)",
+          backgroundSize: "100% 100%",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          boxSizing: "border-box",
+        }}
       >
         {/* Main Grid */}
-        <div className="grid grid-cols-3 gap-4 flex-1 min-h-0">
+        <div className="grid grid-cols-[1fr_1.6fr_1fr] gap-4 flex-1 min-h-0" style={{ height: 'calc(100vh * 640 / 896)' }}>
           {/* Left Panel - Participants */}
           <ParticipantPanel
             participants={participants}
