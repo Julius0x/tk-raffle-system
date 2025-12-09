@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useToast } from "@/hooks/use-toast"
@@ -15,27 +15,40 @@ export default function RafflePanel({ participants, onWinner }: Props) {
   const [isSpinning, setIsSpinning] = useState(false)
   const [displayNames, setDisplayNames] = useState<string[]>(Array(5).fill(""))
   const { toast } = useToast()
+  const timerRefLocal = useRef<number | null>(null)
 
   const handleSpin = () => {
     if (!prize.trim() || participants.length === 0 || isSpinning) return
 
     setIsSpinning(true)
-    const initialNames = Array(5)
-      .fill(null)
-      .map(() => participants[Math.floor(Math.random() * participants.length)])
+    // Show a deterministic preview before spinning (first up to 5 participants)
+    // instead of random names so the participant list stays stable until the spin runs.
+    const initialNames = participants
+      .slice(0, 5)
+      .concat(Array(Math.max(0, 5 - participants.length)).fill(""))
+      .slice(0, 5)
     setDisplayNames(initialNames)
 
+    // Fast tick feel preserved: use small interval (30ms) and compute
+    // number of ticks so the total spin time is ~5 seconds.
     let spins = 0
-    const maxSpins = 40
-    const interval = setInterval(() => {
+    const targetDuration = 5000 // ms total (~5s)
+    const intervalMs = 30 // ms per tick (keeps the fast feel)
+    const maxSpins = Math.max(1, Math.round(targetDuration / intervalMs))
+
+    timerRefLocal.current = window.setInterval(() => {
       setDisplayNames((prev) => {
         const newName = participants[Math.floor(Math.random() * participants.length)]
         return [newName, ...prev.slice(0, 4)]
       })
+
       spins++
 
       if (spins === maxSpins) {
-        clearInterval(interval)
+        if (timerRefLocal.current) {
+          clearInterval(timerRefLocal.current)
+        }
+
         const winnerIndex = Math.floor(Math.random() * participants.length)
         const winner = participants[winnerIndex]
         const finalNames = [
@@ -48,6 +61,7 @@ export default function RafflePanel({ participants, onWinner }: Props) {
         setDisplayNames(finalNames)
         setIsSpinning(false)
 
+        timerRefLocal.current = null
         setTimeout(() => {
           toast({
             title: "🎉 Winner!",
@@ -57,12 +71,20 @@ export default function RafflePanel({ participants, onWinner }: Props) {
           onWinner(winner, prize.trim())
         }, 500)
       }
-    }, 30)
+    }, intervalMs)
   }
+
+  useEffect(() => {
+    return () => {
+      if (timerRefLocal.current) {
+        clearInterval(timerRefLocal.current)
+      }
+    }
+  }, [])
 
   return (
     <div className="bg-white rounded-xl p-6 border border-gray-200 h-full flex flex-col items-center justify-center shadow-sm">
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">Spin the Raffle</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mb-6">Raffle Draw</h2>
 
       <div className="flex flex-col gap-3 mb-8 w-full">
         <div className="w-full h-20 bg-white/20 backdrop-blur-2xl rounded-lg border border-gray-300/30 flex items-center justify-center overflow-hidden shadow-sm" style={{ filter: 'blur(0.8px)' }}>
@@ -77,8 +99,8 @@ export default function RafflePanel({ participants, onWinner }: Props) {
           </span>
         </div>
 
-        <div className="w-full h-32 bg-gradient-to-r from-blue-500 to-blue-400 rounded-lg border-2 border-blue-300 flex items-center justify-center shadow-lg shadow-blue-200">
-          <span className="text-white text-2xl font-extrabold text-center px-4 line-clamp-2 overflow-hidden break-words">
+        <div className="w-full h-32 bg-linear-to-r from-blue-500 to-blue-400 rounded-lg border-2 border-blue-300 flex items-center justify-center shadow-lg shadow-blue-200">
+          <span className="text-white text-2xl font-extrabold text-center px-4 line-clamp-2 overflow-hidden wrap-break-word">
             {displayNames[2] || "?"}
           </span>
         </div>
