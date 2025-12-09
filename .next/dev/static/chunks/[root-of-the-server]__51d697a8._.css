@@ -173,8 +173,6 @@
     --text-5xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
-    --text-9xl: 8rem;
-    --text-9xl--line-height: 1;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -971,10 +969,6 @@
     padding-block: calc(var(--spacing) * 12);
   }
 
-  .py-12\! {
-    padding-block: calc(var(--spacing) * 12) !important;
-  }
-
   .pt-42 {
     padding-top: calc(var(--spacing) * 42);
   }
@@ -1008,11 +1002,6 @@
     line-height: var(--tw-leading, var(--text-4xl--line-height)) !important;
   }
 
-  .\!text-5xl {
-    font-size: var(--text-5xl) !important;
-    line-height: var(--tw-leading, var(--text-5xl--line-height)) !important;
-  }
-
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -1023,19 +1012,9 @@
     line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
 
-  .text-5xl\! {
-    font-size: var(--text-5xl) !important;
-    line-height: var(--tw-leading, var(--text-5xl--line-height)) !important;
-  }
-
   .text-8xl {
     font-size: var(--text-8xl);
     line-height: var(--tw-leading, var(--text-8xl--line-height));
-  }
-
-  .text-9xl {
-    font-size: var(--text-9xl);
-    line-height: var(--tw-leading, var(--text-9xl--line-height));
   }
 
   .text-base {
@@ -1065,14 +1044,6 @@
 
   .\!text-\[115px\] {
     font-size: 115px !important;
-  }
-
-  .text-\[40px\] {
-    font-size: 40px;
-  }
-
-  .text-\[40px\]\! {
-    font-size: 40px !important;
   }
 
   .text-\[100px\] {

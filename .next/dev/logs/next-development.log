@@ -1,214 +1,34 @@
-[00:00:02.842] Server  LOG      ✓ Ready in 1243ms
-[00:00:02.888] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:00:02.888] Browser LOG     [v0] Rendering toast: 6 ↩️ Re-entered
-[00:00:02.888] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:00:02.888] Browser LOG     [v0] Rendering toast: 6 ↩️ Re-entered
-[00:00:02.888] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:00:02.888] Browser LOG     [v0] Rendering toast: 6 ↩️ Re-entered
-[00:00:02.888] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:00:02.888] Browser LOG     [v0] Rendering toast: 6 ↩️ Re-entered
-[00:00:02.888] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/raffle. Falling back to browser navigation. {}
-[00:00:05.910] Server  LOG      ○ Compiling /raffle ...
-[00:00:06.908] Server  LOG     [v0] Toaster rendering with toasts: 0
-[00:00:07.152] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.142] Browser LOG     [v0] Toaster rendering with toasts: 0
-[00:00:08.142] Browser LOG     [v0] Toaster rendering with toasts: 0
-[00:00:08.142] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:08.142] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/raffle","route":"/raffle"}
-[00:00:08.142] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/raffle color: rgb(120, 120, 120) color: inherit {"dp":"/raffle","o":"http://localhost:3000/raffle","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765306646128}
-[00:00:36.036] Server  LOG      ✓ Compiled in 73ms
-[00:00:36.940] Browser ERROR   ./app/raffle/page.tsx:167:5
-Parsing ecmascript source code failed
-  165 |     </div>
-  166 |   );
-> 167 | ght Panel - Winners */}
-      |     ^^^^^
-  168 |           <WinnersPanel winnersByPrize={winnersByPrize} onReEnter={handleReEnter} />
-  169 |         </div>
-  170 |       </div>
-
-Expected ';', '}' or <eof>
-
-Import traces:
-  Client Component Browser:
-    ./app/raffle/page.tsx [Client Component Browser]
-    ./app/raffle/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/raffle/page.tsx [Client Component SSR]
-    ./app/raffle/page.tsx [Server Component]
-[00:00:43.934] Browser ERROR   ./app/raffle/page.tsx:164:5
-Parsing ecmascript source code failed
-  162 |     </div>
-  163 |   )
-> 164 | ght Panel - Winners */}
-      |     ^^^^^
-  165 |           <WinnersPanel winnersByPrize={winnersByPrize} onReEnter={handleReEnter} />
-  166 |         </div>
-  167 |       </div>
-
-Expected ';', '}' or <eof>
-
-Import traces:
-  Client Component Browser:
-    ./app/raffle/page.tsx [Client Component Browser]
-    ./app/raffle/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/raffle/page.tsx [Client Component SSR]
-    ./app/raffle/page.tsx [Server Component]
-[00:00:48.941] Browser ERROR   ./app/raffle/page.tsx:167:5
-Parsing ecmascript source code failed
-  165 |     </div>
-  166 |   );
-> 167 | ght Panel - Winners */}
-      |     ^^^^^
-  168 |           <WinnersPanel winnersByPrize={winnersByPrize} onReEnter={handleReEnter} />
-  169 |         </div>
-  170 |       </div>
-
-Expected ';', '}' or <eof>
-
-Import traces:
-  Client Component Browser:
-    ./app/raffle/page.tsx [Client Component Browser]
-    ./app/raffle/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/raffle/page.tsx [Client Component SSR]
-    ./app/raffle/page.tsx [Server Component]
-[00:01:36.864] Browser LOG     [v0] Toaster rendering with toasts: 0
-[00:01:36.864] Browser LOG     [v0] Toaster rendering with toasts: 0
-[00:06:20.162] Server  LOG      ✓ Compiled in 88ms
-[00:06:27.395] Server  LOG      ✓ Compiled in 45ms
-[00:06:32.248] Server  LOG      ✓ Compiled in 65ms
-[00:06:34.514] Server  LOG     [v0] Toaster rendering with toasts: 0
-[00:06:34.780] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:35.018] Browser LOG     [v0] Toaster rendering with toasts: 0
-[00:06:35.019] Browser LOG     [v0] Toaster rendering with toasts: 0
-[00:06:35.133] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:06:35.133] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/raffle","route":"/raffle"}
-[00:06:35.133] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/raffle color: rgb(120, 120, 120) color: inherit {"dp":"/raffle","o":"http://localhost:3000/raffle","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765307033268}
-[00:06:51.832] Server  LOG      ✓ Compiled in 88ms
-[00:06:58.207] Server  LOG      ✓ Compiled in 98ms
-[00:07:01.520] Server  LOG      ✓ Compiled in 112ms
-[00:07:27.388] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
-[00:07:27.388] Browser LOG     [v0] Toast state updated: 1
-[00:07:27.388] Browser LOG     [v0] Toast state updated: 1
-[00:07:27.388] Browser LOG     [v0] Toast state updated: 1
-[00:07:27.388] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:27.388] Browser LOG     [v0] Rendering toast: 1 ↩️ Re-entered
-[00:07:27.388] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:27.388] Browser LOG     [v0] Rendering toast: 1 ↩️ Re-entered
-[00:07:30.444] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
-[00:07:30.444] Browser LOG     [v0] Toast state updated: 1
-[00:07:30.444] Browser LOG     [v0] Toast state updated: 1
-[00:07:30.444] Browser LOG     [v0] Toast state updated: 1
-[00:07:30.444] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:30.444] Browser LOG     [v0] Rendering toast: 2 ↩️ Re-entered
-[00:07:30.444] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:30.444] Browser LOG     [v0] Rendering toast: 2 ↩️ Re-entered
-[00:07:31.100] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
-[00:07:31.100] Browser LOG     [v0] Toast state updated: 1
-[00:07:31.100] Browser LOG     [v0] Toast state updated: 1
-[00:07:31.100] Browser LOG     [v0] Toast state updated: 1
-[00:07:31.100] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:31.100] Browser LOG     [v0] Rendering toast: 3 ↩️ Re-entered
-[00:07:31.100] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:31.100] Browser LOG     [v0] Rendering toast: 3 ↩️ Re-entered
-[00:07:32.528] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
-[00:07:32.528] Browser LOG     [v0] Toast state updated: 1
-[00:07:32.528] Browser LOG     [v0] Toast state updated: 1
-[00:07:32.528] Browser LOG     [v0] Toast state updated: 1
-[00:07:32.528] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:32.528] Browser LOG     [v0] Rendering toast: 3 ↩️ Re-entered
-[00:07:32.528] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:32.528] Browser LOG     [v0] Rendering toast: 3 ↩️ Re-entered
-[00:07:35.693] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
-[00:07:35.693] Browser LOG     [v0] Toast state updated: 1
-[00:07:35.693] Browser LOG     [v0] Toast state updated: 1
-[00:07:35.693] Browser LOG     [v0] Toast state updated: 1
-[00:07:35.693] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:35.693] Browser LOG     [v0] Rendering toast: 3 ↩️ Re-entered
-[00:07:35.693] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:35.693] Browser LOG     [v0] Rendering toast: 3 ↩️ Re-entered
-[00:07:35.693] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
-[00:07:35.693] Browser LOG     [v0] Toast state updated: 1
-[00:07:35.693] Browser LOG     [v0] Toast state updated: 1
-[00:07:35.693] Browser LOG     [v0] Toast state updated: 1
-[00:07:35.693] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:35.693] Browser LOG     [v0] Rendering toast: 4 ↩️ Re-entered
-[00:07:35.693] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:35.693] Browser LOG     [v0] Rendering toast: 4 ↩️ Re-entered
-[00:07:36.162] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
-[00:07:36.162] Browser LOG     [v0] Toast state updated: 1
-[00:07:36.162] Browser LOG     [v0] Toast state updated: 1
-[00:07:36.162] Browser LOG     [v0] Toast state updated: 1
-[00:07:36.162] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:36.162] Browser LOG     [v0] Rendering toast: 4 ↩️ Re-entered
-[00:07:36.162] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:36.162] Browser LOG     [v0] Rendering toast: 4 ↩️ Re-entered
-[00:07:40.816] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
-[00:07:40.816] Browser LOG     [v0] Toast state updated: 1
-[00:07:40.816] Browser LOG     [v0] Toast state updated: 1
-[00:07:40.816] Browser LOG     [v0] Toast state updated: 1
-[00:07:40.816] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:40.816] Browser LOG     [v0] Rendering toast: 4 ↩️ Re-entered
-[00:07:40.816] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:07:40.816] Browser LOG     [v0] Rendering toast: 4 ↩️ Re-entered
-[00:08:23.692] Server  LOG      ✓ Compiled in 64ms
-[00:08:34.921] Server  LOG      ✓ Compiled in 41ms
-[00:08:40.826] Server  LOG      ✓ Compiled in 86ms
-[00:13:03.146] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765307421195}
-[00:13:07.111] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/raffle color: rgb(120, 120, 120) color: inherit {"dp":"/raffle","o":"http://localhost:3000/raffle","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765307425079}
-[00:13:10.936] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
-[00:13:10.936] Browser LOG     [v0] Toast state updated: 1
-[00:13:10.936] Browser LOG     [v0] Toast state updated: 1
-[00:13:10.936] Browser LOG     [v0] Toast state updated: 1
-[00:13:10.936] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:13:10.936] Browser LOG     [v0] Rendering toast: 5 ↩️ Re-entered
-[00:13:10.936] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:13:10.936] Browser LOG     [v0] Rendering toast: 5 ↩️ Re-entered
-[00:13:10.936] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
-[00:13:10.936] Browser LOG     [v0] Toast state updated: 1
-[00:13:10.936] Browser LOG     [v0] Toast state updated: 1
-[00:13:10.936] Browser LOG     [v0] Toast state updated: 1
-[00:13:10.936] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:13:10.936] Browser LOG     [v0] Rendering toast: 6 ↩️ Re-entered
-[00:13:10.936] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:13:10.936] Browser LOG     [v0] Rendering toast: 6 ↩️ Re-entered
-[00:13:10.936] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
-[00:13:10.936] Browser LOG     [v0] Toast state updated: 1
-[00:13:10.936] Browser LOG     [v0] Toast state updated: 1
-[00:13:10.936] Browser LOG     [v0] Toast state updated: 1
-[00:13:10.936] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:13:10.936] Browser LOG     [v0] Rendering toast: 7 ↩️ Re-entered
-[00:13:10.936] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:13:10.936] Browser LOG     [v0] Rendering toast: 7 ↩️ Re-entered
-[00:13:16.931] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
-[00:13:16.931] Browser LOG     [v0] Toast state updated: 1
-[00:13:16.931] Browser LOG     [v0] Toast state updated: 1
-[00:13:16.931] Browser LOG     [v0] Toast state updated: 1
-[00:13:16.931] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
-[00:13:16.931] Browser LOG     [v0] Toast state updated: 1
-[00:13:16.931] Browser LOG     [v0] Toast state updated: 1
-[00:13:16.931] Browser LOG     [v0] Toast state updated: 1
-[00:13:16.931] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:13:16.931] Browser LOG     [v0] Rendering toast: 7 ↩️ Re-entered
-[00:13:16.931] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:13:16.931] Browser LOG     [v0] Rendering toast: 7 ↩️ Re-entered
-[00:13:45.464] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
-[00:13:45.464] Browser LOG     [v0] Toast state updated: 1
-[00:13:45.464] Browser LOG     [v0] Toast state updated: 1
-[00:13:45.464] Browser LOG     [v0] Toast state updated: 1
-[00:13:45.464] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:13:45.464] Browser LOG     [v0] Rendering toast: 7 ↩️ Re-entered
-[00:13:45.464] Browser LOG     [v0] Toaster rendering with toasts: 1
-[00:13:45.464] Browser LOG     [v0] Rendering toast: 7 ↩️ Re-entered
-[00:16:14.594] Server  LOG     [v0] Toaster rendering with toasts: 0
-[00:16:14.964] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:15.234] Browser LOG     [v0] Toaster rendering with toasts: 0
-[00:16:15.234] Browser LOG     [v0] Toaster rendering with toasts: 0
-[00:16:15.353] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:16:15.353] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/raffle","route":"/raffle"}
-[00:16:15.353] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/raffle color: rgb(120, 120, 120) color: inherit {"dp":"/raffle","o":"http://localhost:3000/raffle","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765307613485}
+[00:00:01.552] Server  LOG      ✓ Ready in 997ms
+[00:00:06.346] Server  LOG      ○ Compiling / ...
+[00:00:10.699] Server  LOG     [v0] Toaster rendering with toasts: 0
+[00:00:11.015] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.344] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:00:11.344] Browser LOG     [v0] Toaster rendering with toasts: 0
+[00:00:11.344] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:11.344] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:11.344] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765307930266}
+[00:00:33.604] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/raffle color: rgb(120, 120, 120) color: inherit {"dp":"/raffle","o":"http://localhost:3000/raffle","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765307952007}
+[00:00:39.556] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:00:39.556] Browser LOG     [v0] Toast state updated: 1
+[00:00:39.556] Browser LOG     [v0] Toast state updated: 1
+[00:00:39.556] Browser LOG     [v0] Toast state updated: 1
+[00:00:39.556] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:00:39.556] Browser LOG     [v0] Rendering toast: 1 ↩️ Re-entered
+[00:00:39.556] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:00:39.556] Browser LOG     [v0] Rendering toast: 1 ↩️ Re-entered
+[00:00:39.898] Browser LOG     [v0] Toast dispatched: ADD_TOAST 1
+[00:00:39.898] Browser LOG     [v0] Toast state updated: 1
+[00:00:39.898] Browser LOG     [v0] Toast state updated: 1
+[00:00:39.898] Browser LOG     [v0] Toast state updated: 1
+[00:00:39.898] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:00:39.898] Browser LOG     [v0] Rendering toast: 2 ↩️ Re-entered
+[00:00:39.898] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:00:39.898] Browser LOG     [v0] Rendering toast: 2 ↩️ Re-entered
+[00:00:42.700] Browser LOG     [v0] Toast dispatched: DISMISS_TOAST 1
+[00:00:42.700] Browser LOG     [v0] Toast state updated: 1
+[00:00:42.700] Browser LOG     [v0] Toast state updated: 1
+[00:00:42.700] Browser LOG     [v0] Toast state updated: 1
+[00:00:42.700] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:00:42.700] Browser LOG     [v0] Rendering toast: 2 ↩️ Re-entered
+[00:00:42.700] Browser LOG     [v0] Toaster rendering with toasts: 1
+[00:00:42.700] Browser LOG     [v0] Rendering toast: 2 ↩️ Re-entered
