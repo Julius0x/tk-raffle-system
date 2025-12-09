@@ -5,6 +5,7 @@ node_modules
 .env
 .env.local
 .env.*.local
+.next
 
 # Logs
 npm-debug.log*
@@ -27,4 +28,11 @@ build/
 coverage/
 
 # If you have local-only images you don't want in the repo, uncomment and add them below
-# public/intro.png
+# Local images or uploads that should not be committed
+public/intro.png
+public/uploads/
+
+# OneDrive / temp files
+~$*
+OneDriveTemp/
+desktop.ini

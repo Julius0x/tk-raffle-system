@@ -1,140 +1,226 @@
-"use client"
+'use client';
 
-import { useState, useRef, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { useToast } from "@/hooks/use-toast"
+import { useState, useRef, useEffect } from 'react';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import Confetti from 'react-confetti';
 
 interface Props {
-  participants: string[]
-  onWinner: (name: string, prize: string) => void
+  participants: string[];
+  onWinner: (name: string, prize: string) => void;
 }
 
 export default function RafflePanel({ participants, onWinner }: Props) {
-  const [prize, setPrize] = useState("")
-  const [isSpinning, setIsSpinning] = useState(false)
-  const [displayNames, setDisplayNames] = useState<string[]>(Array(5).fill(""))
-  const { toast } = useToast()
-  const timerRefLocal = useRef<number | null>(null)
+  const [prize, setPrize] = useState('');
+  const [isSpinning, setIsSpinning] = useState(false);
+  const [displayName, setDisplayName] = useState('');
+  const [showPopup, setShowPopup] = useState(false);
+  const [winningPrize, setWinningPrize] = useState('');
+  const [confettiKey, setConfettiKey] = useState(0);
+  const timerRefLocal = useRef<number | null>(null);
+
+  // Format name as "Last, First" for display
+  const formatName = (name: string) => {
+    if (!name) return '';
+    const parts = name.trim().split(/\s+/);
+    return parts.length > 1
+      ? `${parts[parts.length - 1]}, ${parts.slice(0, -1).join(' ')}`
+      : name;
+  };
 
   const handleSpin = () => {
-    if (!prize.trim() || participants.length === 0 || isSpinning) return
+    if (!prize.trim() || participants.length === 0 || isSpinning) return;
 
-    setIsSpinning(true)
-    // Show a deterministic preview before spinning (first up to 5 participants)
-    // instead of random names so the participant list stays stable until the spin runs.
-    const initialNames = participants
-      .slice(0, 5)
-      .concat(Array(Math.max(0, 5 - participants.length)).fill(""))
-      .slice(0, 5)
-    setDisplayNames(initialNames)
+    setIsSpinning(true);
+    setShowPopup(true);
+    setWinningPrize(prize.trim());
+    // Show a deterministic preview before spinning (first participant)
+    const initialName = participants[0] || '';
+    setDisplayName(initialName);
 
     // Fast tick feel preserved: use small interval (30ms) and compute
     // number of ticks so the total spin time is ~5 seconds.
-    let spins = 0
-    const targetDuration = 5000 // ms total (~5s)
-    const intervalMs = 30 // ms per tick (keeps the fast feel)
-    const maxSpins = Math.max(1, Math.round(targetDuration / intervalMs))
+    let spins = 0;
+    const targetDuration = 5000; // ms total (~5s)
+    const intervalMs = 30; // ms per tick (keeps the fast feel)
+    const maxSpins = Math.max(1, Math.round(targetDuration / intervalMs));
 
     timerRefLocal.current = window.setInterval(() => {
-      setDisplayNames((prev) => {
-        const newName = participants[Math.floor(Math.random() * participants.length)]
-        return [newName, ...prev.slice(0, 4)]
-      })
+      setDisplayName(
+        participants[Math.floor(Math.random() * participants.length)]
+      );
 
-      spins++
+      spins++;
 
       if (spins === maxSpins) {
         if (timerRefLocal.current) {
-          clearInterval(timerRefLocal.current)
+          clearInterval(timerRefLocal.current);
         }
 
-        const winnerIndex = Math.floor(Math.random() * participants.length)
-        const winner = participants[winnerIndex]
-        const finalNames = [
-          participants[Math.floor(Math.random() * participants.length)],
-          participants[Math.floor(Math.random() * participants.length)],
-          winner,
-          participants[Math.floor(Math.random() * participants.length)],
-          participants[Math.floor(Math.random() * participants.length)],
-        ]
-        setDisplayNames(finalNames)
-        setIsSpinning(false)
+        const winnerIndex = Math.floor(Math.random() * participants.length);
+        const winner = participants[winnerIndex];
+        setDisplayName(winner);
+        setIsSpinning(false);
+        setConfettiKey((prev) => prev + 1); // Trigger confetti
 
-        timerRefLocal.current = null
+        timerRefLocal.current = null;
         setTimeout(() => {
-          toast({
-            title: "🎉 Winner!",
-            description: `${winner} won ${prize}!`,
-            variant: "default",
-          })
-          onWinner(winner, prize.trim())
-        }, 500)
+          onWinner(winner, prize.trim());
+        }, 500);
       }
-    }, intervalMs)
-  }
+    }, intervalMs);
+  };
 
   useEffect(() => {
     return () => {
       if (timerRefLocal.current) {
-        clearInterval(timerRefLocal.current)
+        clearInterval(timerRefLocal.current);
       }
-    }
-  }, [])
+    };
+  }, []);
 
   return (
-    <div className="bg-white rounded-xl p-6 border border-gray-200 h-full flex flex-col items-center justify-center shadow-sm">
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">Raffle Draw</h2>
+    <>
+      {/* Center Layout - Input and Spin Button Only */}
+      <div className="flex h-full flex-col items-center justify-center rounded-xl border border-gray-200 bg-white p-9 shadow-sm">
+        <h2 className="mb-12 text-5xl font-bold text-gray-900">Raffle Draw</h2>
 
-      <div className="flex flex-col gap-3 mb-8 w-full">
-        <div className="w-full h-20 bg-white/20 backdrop-blur-2xl rounded-lg border border-gray-300/30 flex items-center justify-center overflow-hidden shadow-sm" style={{ filter: 'blur(0.8px)' }}>
-          <span className="text-gray-700 text-sm font-semibold text-center px-2 line-clamp-1">
-            {displayNames[0] || "?"}
-          </span>
+        <div className="flex w-full max-w-2xl flex-col gap-6">
+          <Input
+            placeholder="Enter prize (e.g., iPhone)"
+            value={prize}
+            onChange={(e) => setPrize(e.target.value)}
+            disabled={isSpinning}
+            className="w-full cursor-pointer border-gray-300 bg-gray-50 px-6 !py-12 !text-4xl text-gray-900 placeholder-gray-400"
+          />
+
+          <Button
+            onClick={handleSpin}
+            disabled={isSpinning || !prize.trim() || participants.length === 0}
+            className="w-full cursor-pointer rounded-md py-9 text-xl text-white disabled:cursor-not-allowed disabled:bg-gray-300"
+            style={{
+              backgroundColor:
+                isSpinning || !prize.trim() || participants.length === 0
+                  ? undefined
+                  : '#d14124',
+            }}
+            onMouseEnter={(e) =>
+              !e.currentTarget.disabled &&
+              (e.currentTarget.style.backgroundColor = '#c83a1f')
+            }
+            onMouseLeave={(e) =>
+              !e.currentTarget.disabled &&
+              (e.currentTarget.style.backgroundColor = '#d14124')
+            }
+          >
+            {isSpinning ? 'Drawing...' : 'Draw'}
+          </Button>
         </div>
 
-        <div className="w-full h-24 bg-white/20 backdrop-blur-2xl rounded-lg border border-gray-300/30 flex items-center justify-center overflow-hidden shadow-sm" style={{ filter: 'blur(0.8px)' }}>
-          <span className="text-gray-700 text-base font-semibold text-center px-2 line-clamp-2">
-            {displayNames[1] || "?"}
-          </span>
-        </div>
-
-        <div className="w-full h-32 bg-linear-to-r from-blue-500 to-blue-400 rounded-lg border-2 border-blue-300 flex items-center justify-center shadow-lg shadow-blue-200">
-          <span className="text-white text-2xl font-extrabold text-center px-4 line-clamp-2 overflow-hidden wrap-break-word">
-            {displayNames[2] || "?"}
-          </span>
-        </div>
-
-        <div className="w-full h-24 bg-white/20 backdrop-blur-2xl rounded-lg border border-gray-300/30 flex items-center justify-center overflow-hidden shadow-sm" style={{ filter: 'blur(0.8px)' }}>
-          <span className="text-gray-700 text-base font-semibold text-center px-2 line-clamp-2">
-            {displayNames[3] || "?"}
-          </span>
-        </div>
-
-        <div className="w-full h-20 bg-white/20 backdrop-blur-2xl rounded-lg border border-gray-300/30 flex items-center justify-center overflow-hidden shadow-sm" style={{ filter: 'blur(0.8px)' }}>
-          <span className="text-gray-700 text-sm font-semibold text-center px-2 line-clamp-1">
-            {displayNames[4] || "?"}
-          </span>
-        </div>
+        {participants.length === 0 && (
+          <p className="mt-9 text-base text-gray-500">
+            Add participants to start spinning
+          </p>
+        )}
       </div>
 
-      <Input
-        placeholder="Enter prize name (e.g., iPhone)"
-        value={prize}
-        onChange={(e) => setPrize(e.target.value)}
-        disabled={isSpinning}
-        className="bg-gray-50 border-gray-300 text-gray-900 placeholder-gray-400 mb-6 w-full h-12 text-lg px-4 cursor-pointer"
-      />
+      {/* Full Screen Popup - Randomizer and Prize Title */}
+      {showPopup && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height: '100vh',
+            width: '100vw',
+            backgroundImage: "url('/bg.png')",
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed',
+          }}
+        >
+          {/* Dark Overlay - Minimal */}
+          <div
+            className="absolute inset-0"
+            style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)', zIndex: 0 }}
+          ></div>
 
-      <Button
-        onClick={handleSpin}
-        disabled={isSpinning || !prize.trim() || participants.length === 0}
-        className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white py-6 w-full text-lg rounded-md cursor-pointer"
-      >
-        {isSpinning ? "Spinning..." : "Spin"}
-      </Button>
+          {/* Confetti */}
+          <Confetti
+            key={confettiKey}
+            recycle={false}
+            numberOfPieces={!isSpinning ? 1500 : 0}
+            gravity={0.3}
+          />
 
-      {participants.length === 0 && <p className="text-gray-500 text-sm mt-6">Add participants to start spinning</p>}
-    </div>
-  )
+          {/* Close Button - Top Right */}
+          <button
+            onClick={() => setShowPopup(false)}
+            className="absolute top-6 right-6 text-white transition-colors hover:text-gray-300"
+            style={{
+              fontSize: '40px',
+              width: '50px',
+              height: '50px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              cursor: 'pointer',
+              zIndex: 52,
+            }}
+          >
+            ✕
+          </button>
+
+          {/* Content Container */}
+          <div
+            className="flex h-full w-full flex-col items-center justify-center px-20"
+            style={{ zIndex: 10 }}
+          >
+            {/* Randomizer - Top */}
+            <div className="mb-20 w-full shrink-0">
+              <div className="flex h-60 w-full items-center justify-center rounded-lg bg-white shadow-lg">
+                <span className="overflow-hidden px-6 text-center !text-[115px] font-extrabold whitespace-nowrap text-[#d14124]!">
+                  {formatName(displayName) || '?'}
+                </span>
+              </div>
+            </div>
+
+            {/* Prize Title - Always Display */}
+            <div className="shrink-0 text-center">
+              {/* <h3 className="text-white text-8xl font-semibold mb-12"></h3> */}
+              <p className="text-[100px] font-bold text-white">
+                Prize: {winningPrize}
+              </p>
+
+              {/* Draw again button inside popup (shown only when not spinning) */}
+              {!isSpinning && (
+                <div className="absolute bottom-20 left-1/2 -translate-x-1/2 transform px-20">
+                  <Button
+                    onClick={handleSpin}
+                    disabled={
+                      isSpinning || !prize.trim() || participants.length === 0
+                    }
+                    className="w-full cursor-pointer rounded-md px-15 py-10 text-5xl text-white disabled:cursor-not-allowed disabled:bg-gray-300"
+                    style={{ backgroundColor: '#d14124' }}
+                    onMouseEnter={(e) =>
+                      !e.currentTarget.disabled &&
+                      (e.currentTarget.style.backgroundColor = '#c83a1f')
+                    }
+                    onMouseLeave={(e) =>
+                      !e.currentTarget.disabled &&
+                      (e.currentTarget.style.backgroundColor = '#d14124')
+                    }
+                  >
+                    Draw
+                  </Button>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
 }

@@ -110,24 +110,24 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$toaster$
 ;
 ;
 const metadata = {
-    title: "TK Raffle System",
-    description: "Tk raffle system for giveaways and events.",
+    title: 'TK Raffle System',
+    description: 'Tk raffle system for giveaways and events.',
     icons: {
         icon: [
             {
-                url: "/icon.png",
-                media: "(prefers-color-scheme: light)"
+                url: '/icon.png',
+                media: '(prefers-color-scheme: light)'
             },
             {
-                url: "/icon.png",
-                media: "(prefers-color-scheme: dark)"
+                url: '/icon.png',
+                media: '(prefers-color-scheme: dark)'
             },
             {
-                url: "/icon.png",
-                type: "image/png"
+                url: '/icon.png',
+                type: 'image/png'
             }
         ],
-        apple: "/icon.png"
+        apple: '/icon.png'
     }
 };
 function RootLayout({ children }) {
