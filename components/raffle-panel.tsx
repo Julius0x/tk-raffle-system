@@ -17,9 +17,18 @@ export default function RafflePanel({ participants, onWinner }: Props) {
   const [showPopup, setShowPopup] = useState(false);
   const [winningPrize, setWinningPrize] = useState('');
   const [confettiKey, setConfettiKey] = useState(0);
-  const timerRefLocal = useRef<number | null>(null);
 
-  // Format name as "Last, First" for display
+  const timerRefLocal = useRef<number | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Load audio safely on client side only
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      audioRef.current = new Audio('/sound-effect.mp3');
+    }
+  }, []);
+
+  // Format name as "Last, First"
   const formatName = (name: string) => {
     if (!name) return '';
     const parts = name.trim().split(/\s+/);
@@ -28,14 +37,14 @@ export default function RafflePanel({ participants, onWinner }: Props) {
       : name;
   };
 
-  const raffleSound = new Audio('/sound-effect.mp3');
-
   const handleSpin = () => {
     if (!prize.trim() || participants.length === 0 || isSpinning) return;
 
-    // Play raffle sound
-    raffleSound.currentTime = 0;
-    raffleSound.play();
+    // Play sound
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0;
+      audioRef.current.play().catch(() => {});
+    }
 
     setIsSpinning(true);
     setShowPopup(true);
@@ -128,16 +137,11 @@ export default function RafflePanel({ participants, onWinner }: Props) {
         )}
       </div>
 
-      {/* Full Screen Popup - Randomizer and Prize Title */}
+      {/* Full Screen Popup */}
       {showPopup && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center"
           style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            height: '100vh',
-            width: '100vw',
             backgroundImage: "url('/bg.png')",
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
@@ -145,7 +149,7 @@ export default function RafflePanel({ participants, onWinner }: Props) {
             backgroundAttachment: 'fixed',
           }}
         >
-          {/* Dark Overlay - Minimal */}
+          {/* Dark Overlay */}
           <div
             className="absolute inset-0"
             style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)', zIndex: 0 }}
@@ -159,7 +163,7 @@ export default function RafflePanel({ participants, onWinner }: Props) {
             gravity={0.3}
           />
 
-          {/* Close Button - Top Right */}
+          {/* Close Button */}
           <button
             onClick={() => setShowPopup(false)}
             className="absolute top-6 right-6 text-white transition-colors hover:text-gray-300"
@@ -182,23 +186,22 @@ export default function RafflePanel({ participants, onWinner }: Props) {
             className="flex h-full w-full flex-col items-center justify-center px-20"
             style={{ zIndex: 10 }}
           >
-            {/* Randomizer - Top */}
+            {/* Randomizer Display */}
             <div className="mb-20 w-full shrink-0">
               <div className="flex h-60 w-full items-center justify-center rounded-lg bg-white shadow-lg">
-                <span className="overflow-hidden px-6 text-center !text-[115px] font-extrabold whitespace-nowrap text-[#d14124]!">
+                <span className="overflow-hidden px-6 text-center !text-[115px] font-extrabold whitespace-nowrap text-[#d14124]">
                   {formatName(displayName) || '?'}
                 </span>
               </div>
             </div>
 
-            {/* Prize Title - Always Display */}
+            {/* Prize */}
             <div className="shrink-0 text-center">
-              {/* <h3 className="text-white text-8xl font-semibold mb-12"></h3> */}
               <p className="text-[100px] font-bold text-white">
                 Prize: {winningPrize}
               </p>
 
-              {/* Draw again button inside popup (shown only when not spinning) */}
+              {/* Draw Again */}
               {!isSpinning && (
                 <div className="absolute bottom-20 left-1/2 -translate-x-1/2 transform px-20">
                   <Button
