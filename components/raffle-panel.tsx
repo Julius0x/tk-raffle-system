@@ -28,21 +28,25 @@ export default function RafflePanel({ participants, onWinner }: Props) {
       : name;
   };
 
+  const raffleSound = new Audio('/sound-effect.mp3');
+
   const handleSpin = () => {
     if (!prize.trim() || participants.length === 0 || isSpinning) return;
+
+    // Play raffle sound
+    raffleSound.currentTime = 0;
+    raffleSound.play();
 
     setIsSpinning(true);
     setShowPopup(true);
     setWinningPrize(prize.trim());
-    // Show a deterministic preview before spinning (first participant)
+
     const initialName = participants[0] || '';
     setDisplayName(initialName);
 
-    // Fast tick feel preserved: use small interval (30ms) and compute
-    // number of ticks so the total spin time is ~5 seconds.
     let spins = 0;
-    const targetDuration = 5000; // ms total (~5s)
-    const intervalMs = 30; // ms per tick (keeps the fast feel)
+    const targetDuration = 6000;
+    const intervalMs = 30;
     const maxSpins = Math.max(1, Math.round(targetDuration / intervalMs));
 
     timerRefLocal.current = window.setInterval(() => {
@@ -61,7 +65,7 @@ export default function RafflePanel({ participants, onWinner }: Props) {
         const winner = participants[winnerIndex];
         setDisplayName(winner);
         setIsSpinning(false);
-        setConfettiKey((prev) => prev + 1); // Trigger confetti
+        setConfettiKey((prev) => prev + 1);
 
         timerRefLocal.current = null;
         setTimeout(() => {
