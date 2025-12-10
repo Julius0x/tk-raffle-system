@@ -1,24 +1,24 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-/* 1. Define the font */
+/* -----------------------------
+   Font Definition
+----------------------------- */
 @font-face {
   font-family: 'Squad-Heavy';
-  src: url('/Squad-Heavy.woff2') format('woff2');
-  font-weight: 700; /* match your font weight */
+  src: url('/fonts/Squad-Heavy.woff2') format('woff2'); /* Place font in public/fonts/ */
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
-/* 2. Apply globally */
-html,
-body,
-input,
-textarea,
-button,
-select {
-  font-family: 'Squad-Heavy', sans-serif !important;
+/* -----------------------------
+   CSS Variables for Fonts
+----------------------------- */
+:root {
+  --font-sans: 'Squad-Heavy', sans-serif;
 }
+
 /* -----------------------------
    Tailwind Dark Mode Variant
 ----------------------------- */
@@ -91,11 +91,23 @@ select {
    Tailwind Base Styles
 ----------------------------- */
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
   }
-  body {
-    @apply bg-background text-foreground;
-    font-family: var(--font-sans); /* Ensure Tailwind body uses your font */
+
+  html,
+  body,
+  input,
+  textarea,
+  button,
+  select {
+    font-family: var(--font-sans) !important;
+    background-color: var(--background);
+    color: var(--foreground);
+    border: 1px solid var(--border);
+    outline: 2px solid var(--ring);
+    outline-offset: 0.25rem;
   }
 }
