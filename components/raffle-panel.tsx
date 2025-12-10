@@ -17,16 +17,22 @@ export default function RafflePanel({ participants, onWinner }: Props) {
   const [showPopup, setShowPopup] = useState(false);
   const [winningPrize, setWinningPrize] = useState('');
   const [confettiKey, setConfettiKey] = useState(0);
+  const [remainingParticipants, setRemainingParticipants] =
+    useState<string[]>(participants);
 
   const timerRefLocal = useRef<number | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Load audio safely on client side only
   useEffect(() => {
     if (typeof window !== 'undefined') {
       audioRef.current = new Audio('/sound-effect.mp3');
     }
   }, []);
+
+  useEffect(() => {
+    // Reset remaining participants if participants prop changes
+    setRemainingParticipants(participants);
+  }, [participants]);
 
   // Format name as "Last, First"
   const formatName = (name: string) => {
@@ -38,7 +44,8 @@ export default function RafflePanel({ participants, onWinner }: Props) {
   };
 
   const handleSpin = () => {
-    if (!prize.trim() || participants.length === 0 || isSpinning) return;
+    if (!prize.trim() || remainingParticipants.length === 0 || isSpinning)
+      return;
 
     // Play sound
     if (audioRef.current) {
@@ -50,7 +57,7 @@ export default function RafflePanel({ participants, onWinner }: Props) {
     setShowPopup(true);
     setWinningPrize(prize.trim());
 
-    const initialName = participants[0] || '';
+    const initialName = remainingParticipants[0] || '';
     setDisplayName(initialName);
 
     let spins = 0;
@@ -60,7 +67,9 @@ export default function RafflePanel({ participants, onWinner }: Props) {
 
     timerRefLocal.current = window.setInterval(() => {
       setDisplayName(
-        participants[Math.floor(Math.random() * participants.length)]
+        remainingParticipants[
+          Math.floor(Math.random() * remainingParticipants.length)
+        ]
       );
 
       spins++;
@@ -70,13 +79,21 @@ export default function RafflePanel({ participants, onWinner }: Props) {
           clearInterval(timerRefLocal.current);
         }
 
-        const winnerIndex = Math.floor(Math.random() * participants.length);
-        const winner = participants[winnerIndex];
+        const winnerIndex = Math.floor(
+          Math.random() * remainingParticipants.length
+        );
+        const winner = remainingParticipants[winnerIndex];
         setDisplayName(winner);
         setIsSpinning(false);
         setConfettiKey((prev) => prev + 1);
 
+        // Remove winner from remaining participants
+        setRemainingParticipants((prev) =>
+          prev.filter((_, i) => i !== winnerIndex)
+        );
+
         timerRefLocal.current = null;
+
         setTimeout(() => {
           onWinner(winner, prize.trim());
         }, 500);
@@ -91,6 +108,9 @@ export default function RafflePanel({ participants, onWinner }: Props) {
       }
     };
   }, []);
+
+  const canSpin =
+    prize.trim() && remainingParticipants.length > 0 && !isSpinning;
 
   return (
     <>
@@ -109,30 +129,25 @@ export default function RafflePanel({ participants, onWinner }: Props) {
 
           <Button
             onClick={handleSpin}
-            disabled={isSpinning || !prize.trim() || participants.length === 0}
+            disabled={!canSpin}
             className="w-full cursor-pointer rounded-md py-9 text-xl text-white disabled:cursor-not-allowed disabled:bg-gray-300"
             style={{
-              backgroundColor:
-                isSpinning || !prize.trim() || participants.length === 0
-                  ? undefined
-                  : '#d14124',
+              backgroundColor: canSpin ? '#d14124' : undefined,
             }}
             onMouseEnter={(e) =>
-              !e.currentTarget.disabled &&
-              (e.currentTarget.style.backgroundColor = '#c83a1f')
+              canSpin && (e.currentTarget.style.backgroundColor = '#c83a1f')
             }
             onMouseLeave={(e) =>
-              !e.currentTarget.disabled &&
-              (e.currentTarget.style.backgroundColor = '#d14124')
+              canSpin && (e.currentTarget.style.backgroundColor = '#d14124')
             }
           >
             {isSpinning ? 'Drawing...' : 'Draw'}
           </Button>
         </div>
 
-        {participants.length === 0 && (
+        {remainingParticipants.length === 0 && (
           <p className="mt-9 text-base text-gray-500">
-            Add participants to start spinning
+            All participants have won. Add more to continue.
           </p>
         )}
       </div>
@@ -149,13 +164,11 @@ export default function RafflePanel({ participants, onWinner }: Props) {
             backgroundAttachment: 'fixed',
           }}
         >
-          {/* Dark Overlay */}
           <div
             className="absolute inset-0"
             style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)', zIndex: 0 }}
           ></div>
 
-          {/* Confetti */}
           <Confetti
             key={confettiKey}
             recycle={false}
@@ -163,7 +176,6 @@ export default function RafflePanel({ participants, onWinner }: Props) {
             gravity={0.3}
           />
 
-          {/* Close Button */}
           <button
             onClick={() => setShowPopup(false)}
             className="absolute top-6 right-6 text-white transition-colors hover:text-gray-300"
@@ -181,12 +193,10 @@ export default function RafflePanel({ participants, onWinner }: Props) {
             ✕
           </button>
 
-          {/* Content Container */}
           <div
             className="flex h-full w-full flex-col items-center justify-center px-20"
             style={{ zIndex: 10 }}
           >
-            {/* Randomizer Display */}
             <div className="mb-20 w-full shrink-0">
               <div className="flex h-60 w-full items-center justify-center rounded-lg bg-white shadow-lg">
                 <span className="overflow-hidden px-6 text-center !text-[115px] font-extrabold whitespace-nowrap text-[#d14124]">
@@ -195,28 +205,24 @@ export default function RafflePanel({ participants, onWinner }: Props) {
               </div>
             </div>
 
-            {/* Prize */}
             <div className="shrink-0 text-center">
               <p className="text-[100px] font-bold text-white">
                 Prize: {winningPrize}
               </p>
 
-              {/* Draw Again */}
-              {!isSpinning && (
+              {!isSpinning && remainingParticipants.length > 0 && (
                 <div className="absolute bottom-20 left-1/2 -translate-x-1/2 transform px-20">
                   <Button
                     onClick={handleSpin}
-                    disabled={
-                      isSpinning || !prize.trim() || participants.length === 0
-                    }
+                    disabled={!canSpin}
                     className="w-full cursor-pointer rounded-md px-15 py-10 text-5xl text-white disabled:cursor-not-allowed disabled:bg-gray-300"
                     style={{ backgroundColor: '#d14124' }}
                     onMouseEnter={(e) =>
-                      !e.currentTarget.disabled &&
+                      canSpin &&
                       (e.currentTarget.style.backgroundColor = '#c83a1f')
                     }
                     onMouseLeave={(e) =>
-                      !e.currentTarget.disabled &&
+                      canSpin &&
                       (e.currentTarget.style.backgroundColor = '#d14124')
                     }
                   >
