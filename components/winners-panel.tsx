@@ -74,7 +74,7 @@ export default function WinnersPanel({ winnersByPrize, onReEnter }: Props) {
       <div className="scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100 min-h-0 flex-1 space-y-6 overflow-y-auto pr-2">
         {totalWinners === 0 ? (
           <p className="py-12 text-center text-base text-gray-500">
-            No winners yet. Start spinning!
+            No winners yet. Start the Raffle!
           </p>
         ) : (
           Object.entries(filteredWinners).map(([prize, names]) => (

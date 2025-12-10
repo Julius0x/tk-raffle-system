@@ -10,6 +10,7 @@ interface Props {
   participants: string[];
   onAddParticipant: (name: string) => void;
   onDeleteParticipant: (name: string) => void;
+  onDeleteAll?: () => void; // <-- added
   winnerMap?: { [key: string]: string };
 }
 
@@ -17,6 +18,7 @@ export default function ParticipantPanel({
   participants,
   onAddParticipant,
   onDeleteParticipant,
+  onDeleteAll,
   winnerMap = {},
 }: Props) {
   const [newName, setNewName] = useState('');
@@ -105,12 +107,6 @@ export default function ParticipantPanel({
         ) : (
           filteredParticipants.map((participant) => {
             const prize = winnerMap[participant];
-            // Split name into parts and reverse format to "Last, First"
-            const nameParts = participant.trim().split(/\s+/);
-            const nameDisplay =
-              nameParts.length > 1
-                ? `${nameParts[nameParts.length - 1]}, ${nameParts.slice(0, -1).join(' ')}`
-                : participant;
             const prizeDisplay = prize ? `won ${prize}` : '';
 
             return (
@@ -124,9 +120,11 @@ export default function ParticipantPanel({
               >
                 <div className="flex-1">
                   <span
-                    className={`block text-base font-medium ${prize ? 'text-green-700' : 'text-gray-900'}`}
+                    className={`block text-base font-medium ${
+                      prize ? 'text-green-700' : 'text-gray-900'
+                    }`}
                   >
-                    {nameDisplay}
+                    {participant}
                   </span>
                   {prizeDisplay && (
                     <span className="block text-sm text-green-600">
@@ -145,6 +143,18 @@ export default function ParticipantPanel({
           })
         )}
       </div>
+
+      {/* 🔥 DELETE ALL BUTTON ADDED HERE */}
+      {participants.length > 0 && (
+        <Button
+          onClick={() => onDeleteAll && onDeleteAll()}
+          variant="destructive"
+          className="mt-4 h-12 w-full flex items-center justify-center gap-2 cursor-pointer"
+        >
+          <Trash2 className="h-4 w-4" />
+          Delete All
+        </Button>
+      )}
 
       <div className="mt-3 text-center text-base text-gray-500">
         {participants.length} participant{participants.length !== 1 ? 's' : ''}

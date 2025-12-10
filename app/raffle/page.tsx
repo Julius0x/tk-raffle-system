@@ -89,6 +89,16 @@ export default function RafflePage() {
     });
   };
 
+  // 🔥 NEW — Delete All Participants
+  const handleDeleteAllParticipants = () => {
+    setParticipants([]);
+    toast({
+      title: '🗑️ All Removed',
+      description: 'All participants have been deleted.',
+      variant: 'destructive',
+    });
+  };
+
   const handleWinner = (name: string, prize: string) => {
     if (name && prize) {
       setWinners([...winners, { name, prize, timestamp: Date.now() }]);
@@ -149,6 +159,7 @@ export default function RafflePage() {
             participants={participants}
             onAddParticipant={handleAddParticipant}
             onDeleteParticipant={handleDeleteParticipant}
+            onDeleteAll={handleDeleteAllParticipants} // 🔥 added here
             winnerMap={winnerMap}
           />
 

@@ -190,7 +190,7 @@ export default function RafflePanel({ participants, onWinner }: Props) {
             <div className="mb-20 w-full shrink-0">
               <div className="flex h-60 w-full items-center justify-center rounded-lg bg-white shadow-lg">
                 <span className="overflow-hidden px-6 text-center !text-[115px] font-extrabold whitespace-nowrap text-[#d14124]">
-                  {formatName(displayName) || '?'}
+                  {displayName}
                 </span>
               </div>
             </div>
