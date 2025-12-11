@@ -113,7 +113,7 @@ export const names = [
   'John Carlou Elesis',
   'Jovert Ero',
   'Mary Kathleen Escopete',
-  'Maria Jean Eunice Espiritu',
+  'Maria Jean Eunice Manuel',
   'Denia Mae Espuelas',
   'Nadia Estavillo',
   'Erma Jessica Esteban',
